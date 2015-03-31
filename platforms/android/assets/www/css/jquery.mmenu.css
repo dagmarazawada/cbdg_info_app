@@ -1,0 +1,27 @@
+body {	
+	position: relative;
+	-webkit-text-size-adjust: none;
+}
+nav:not(.mm-menu)
+{
+	display: none;
+}
+.menuico
+{
+	background: center center no-repeat #dcdcdc;
+	background-image: url( "img/bars_orange.png" );
+
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+#menuicoDiv {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+#menuicoDiv a {
+	font-color: black;
+}
