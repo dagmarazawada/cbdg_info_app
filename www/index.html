@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>CBDG 2015</title>
+		<title>Centralna Baza Danych Geologicznych</title>
 		<meta name="description" content="Centralna Baza Danych Geologicznych (CBDG) jest największym w Polsce zbiorem cyfrowych danych geologicznych.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/abc.js"></script>
@@ -25,20 +25,66 @@
 		<!--[if lt IE 7]><p class=chromeframe>Masz <em>przestarzałą przeglądarkę!</em> <a href="http://browsehappy.com/">Zmień ją na coś nowszego</a> żeby przeglądąć tę stronę.</p><![endif]-->
 		<div class="page-content-wrapper">
 
-			<header class="header">
+			<header class="header fixed">
 				<div class="row">
 
 					<div id="menuicoDiv">
 						<a class="menuico" href="#menu" style="right: 0;"></a>
 					</div>
-					
+
 					<div class="span3">
 						<h1 class="logo"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><span class="title_h1">Państwowy&nbsp;Instytut&nbsp;Geologiczny Państwowy&nbsp;Instytut&nbsp;Badawczy</span></h1>
 					</div>
-
+					
 					<div class="span2 lang">
 						<a href="index_en.html"><img src="css/img/lang_uk.png"></a>
-						<img src="css/img/lang_pl.png">
+					</div>
+
+					<div class="span7 menu_desktop">
+						<ul class="menu">
+							<li><a class="btn btn-warning btn-large" href="index.html">Home</a></li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_o_bazie.html">O Bazie</a>
+								<ul>
+									<li>
+										<a href="cbdg_o_bazie.html#historia">Historia</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#postery">Postery</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_architektura_bazy.html">Architektura bazy</a>
+								<ul>									
+									<li>
+										<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+									</li>
+									<li>
+										<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_zasoby_danych.html">Zasoby danych</a>
+								<ul>
+									<li>
+										<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
+									</li>
+									<li>
+										<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
+									</li>
+								</ul>
+							</li>
+							<li><a class="btn btn-warning btn-large" href="cbdg_kontakt.html">Kontakt</a></li>
+						</ul>
+
 					</div>
 
 				</div>
@@ -101,43 +147,40 @@
 								<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 830px; height: 300px; overflow: hidden; background: #2A261B">
 									<div>
 										<div class="slider-content">
-											<img src="images/title_cbdg.png" alt="CBDG" >
+											<h2 class="slide_title">CBDG</h2>
 											<blockquote>
 												CBDG gromadzi i udostępnia informacje z dziedziny geologii i&nbsp;nauk pokrewnych w celu lepszego poznania budowy geologicznej Polski, wspierania administracji, przemysłu, nauki.
 											</blockquote>
-											<cite>— Wojciech Paciura, koordynator CBDG</cite>
+											<!-- <cite></cite> -->
 										</div>
-										<a> <img u="image" src2="images/cbdg2.jpg"/> </a>
+										<a href="http://geoportal.pgi.gov.pl" target="blank"> <img u="image" src2="images/cbdg2.jpg"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<img src="images/title_dokumenty.png" alt="Dokumentacje geologiczne" >
+											<h2 class="slide_title">Dokumenty</h2>
 											<blockquote>
 												Dane katalogowe archiwalnych opracowań geologicznych zgromadzonych w Narodowym Archiwum Geologicznym a także w&nbsp;innych archiwach w kraju.
 											</blockquote>
-											<cite>— Radosław Markiewicz, menadżer Podsystemu CBDG Dokumenty</cite>
 										</div>
-										<a> <img u="image" src2="images/dokumenty.jpg"/> </a>
+										<a href="http://dokumenty.pgi.gov.pl" target="blank"> <img u="image" src2="images/dokumenty.jpg"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<img src="images/title_otwory.png" alt="Otwory wiertnicze" >
+											<h2 class="slide_title" style="font-size: 2.3em;">Otwory wiertnicze</h2>
 											<blockquote>
 												Podsystem CBDG Otwory wiertnicze udostępnia szczegółowe informacje o&nbsp;profilach stratygraficzych, litologicznych, badaniach geofizycznych i rdzeniach wiertniczych.
 											</blockquote>
-											<!-- <cite>— Dominik Stańczuk, główny architekt Podsystemu CBDG Otwory</cite> -->
 										</div>
-										<a> <img u="image" src2="images/otwory.jpg"/> </a>
+										<a href="http://otwory.pgi.gov.pl" target="blank"> <img u="image" src2="images/otwory.jpg"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<img src="images/title_jaskinie.png" alt="FifthRing" >
+											<h2 class="slide_title">Jaskinie</h2>
 											<blockquote>
 												Aktualny stan wiedzy o jaskiniach opracowany na podstawie informacji zgromadzonych przez Polskie Towarzystwo Przyjaciół Nauk o Ziemi (PTPNoZ).
 											</blockquote>
-											<cite>— Ewa Machalska, menadżer Podsystemu CBDG Jaskinie</cite>
 										</div>
-										<a> <img u="image" src2="images/jaskinie.jpg"/> </a>
+										<a href="http://jaskinie.pgi.gov.pl" target="blank"> <img u="image" src2="images/jaskinie.jpg"/> </a>
 									</div>
 								</div>
 
@@ -439,7 +482,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib01.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Centralna Baza Danych Geologicznych</span></a></h1>
+						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Centralna Baza Danych Geologicznych</span></a></h1>
 						<h3>Naszą misją jest czynić geologię coraz bardziej dostępną.</h3>
 					</div>
 				</div>
@@ -497,10 +540,10 @@
 								<a href="cbdg_architektura_bazy.html"><strong>Architektura bazy</strong></a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html#slowniki">Słowniki bazy</a>
+								<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+								<a href="cbdg_architektura_bazy.html#slowniki">Słowniki bazy</a>
 							</li>
 							<li>
 								<a href="cbdg_zasoby_danych.html"><strong>Zasoby danych</strong></a>
@@ -553,10 +596,10 @@
 					<a href="cbdg_architektura_bazy.html">Architektura bazy</a>
 					<ul>
 						<li>
-							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
 						</li>
 						<li>
-							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
 						</li>
 					</ul>
 				</li>
@@ -577,8 +620,8 @@
 			</ul>
 		</nav>
 
-		<script src="js/jquery.js"></script>
-		<!--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+		<!--<script src="js/jquery.js"></script>-->
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
 		<script src="js/selectivizr.js"></script>
 		<script>
@@ -586,9 +629,8 @@
 		</script>
 
 		<script type="text/javascript" src="images/_dynamic_002.php"></script>
-		<!--<script type="text/javascript" src="images/_dynamic.php"></script>
-		<script type="text/javascript" src="js/cookies.js"></script>
-		-->
+		<!--<script type="text/javascript" src="images/_dynamic.php"></script>-->
+		<!--<script type="text/javascript" src="js/cookies.js"></script>-->
 
 		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
@@ -598,6 +640,9 @@
 		<link href="css/jquery.mmenu.positioning.css" rel="stylesheet" media="screen">
 		<link href="css/jquery.mmenu.css" rel="stylesheet" media="screen">
 		<script src="js/jquery.mmenu.min.all.js"></script>
+
+		<link href="css/dropit.css" rel="stylesheet" media="screen">
+		<script src="js/dropit.js"></script>
 
 		<script src="js/functions.js"></script>
 

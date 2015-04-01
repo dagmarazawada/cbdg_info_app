@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>CBDG 2015</title>
+		<title>Centralna Baza Danych Geologicznych</title>
 		<meta name="description" content="Centralna Baza Danych Geologicznych (CBDG) jest największym w Polsce zbiorem cyfrowych danych geologicznych.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/abc.js"></script>
@@ -25,7 +25,7 @@
 		<!--[if lt IE 7]><p class=chromeframe>Masz <em>przestarzałą przeglądarkę!</em> <a href="http://browsehappy.com/">Zmień ją na coś nowszego</a> żeby przeglądąć tę stronę.</p><![endif]-->
 		<div class="page-content-wrapper">
 
-			<header class="header">
+			<header class="header fixed">
 				<div class="row">
 					
 					<div id="menuicoDiv">
@@ -37,9 +37,56 @@
 					</div>
 					
 					<div class="span2 lang">
-						<a href="index_en.html"><img src="css/img/lang_uk.png"></a>
-						<img src="css/img/lang_pl.png">
+						<a href="cbdg_architektura_bazy_en.html"><img src="css/img/lang_uk.png"></a>
 					</div>
+					
+					<div class="span7 menu_desktop">
+						<ul class="menu">
+							<li><a class="btn btn-warning btn-large" href="index.html">Home</a></li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_o_bazie.html">O Bazie</a>
+								<ul>
+									<li>
+										<a href="cbdg_o_bazie.html#historia">Historia</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#postery">Postery</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_architektura_bazy.html">Architektura bazy</a>
+								<ul>
+									<li>
+										<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+									</li>
+									<li>
+										<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_zasoby_danych.html">Zasoby danych</a>
+								<ul>
+									<li>
+										<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
+									</li>
+									<li>
+										<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
+									</li>
+								</ul>
+							</li>
+							<li><a class="btn btn-warning btn-large" href="cbdg_kontakt.html">Kontakt</a></li>
+						</ul>
+
+					</div>
+
 
 				</div>
 			</header>
@@ -57,6 +104,35 @@
 				<div class="row get-started-now">
 					<div class="span10 offset1 white-panel button-text-panel">
 						<h2>Architektura bazy</h2>
+					</div>
+				</div>
+				
+				<div id="architektura" class="row">
+					<div class="span12 white-panel better-manage">
+						<div class="container">
+							<div class="row cf">
+								<div class="span12">
+									<div class="padding-large">
+										
+										<h2>Architektura bazy</h2>
+										
+										<p> Dostęp do danych w CBDG jest realizowany w architekturze wielowarstwowej. Serwery zdalnego dostępu i aplikacji internetowych umożliwiają dostęp do bazy spoza PIG Warszawa, na przykład z oddziałów regionalnych Instytutu, z Ministerstwa Środowiska, z innych instytucji wykorzystujących dane z bazy lub wprowadzających dane do niej.</p>
+										<a href="http://geoportal.pgi.gov.pl"> <img class="portal" src="http://geoportal.pgi.gov.pl/css/cbdg/images/arch_2010pl_.jpg" alt="Architektura CBDG" title="Architektura CBDG"></a>											
+										
+										<p> CBDG zapewnia również obsługę danych przestrzennych oraz gwarantuje ich spójność z danymi opisowymi w czasie ich aktualizacji. Przechowuje referencyjne warstwy informacyjne typu topograficznego lub administracyjnego oraz geologiczne, z których korzysta wiele ważnych systemów informatycznych PIG, takich jak: MIDAS, SOPO, IKAR.</p>
+										
+										<p> Publiczny dostęp do bazy zapewnia serwis internetowy CBDG. Umożliwia on wyszukiwanie najważniejszych danych, zarówno tekstowych, jak i przestrzennych (GIS). Wspomaga również zamawianie map seryjnych PIG (SMGP, MHP i MGGP). Serwis funkcjonuje na oddzielnym serwerze, na którym dane są regularnie aktualizowane na podstawie zasobów CBDG.</p>
+										
+										<p></p>
+										
+										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
+										<p class="small-text">
+											Bezpłatny dostęp do danych
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -171,7 +247,7 @@
 
 			</div>
 
-			<div class="push">
+			<div class="push" style="z-index: -1;">
 				<!--//-->
 			</div>
 		</div>
@@ -180,7 +256,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib01.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Centralna Baza Danych Geologicznych</span></a></h1>
+						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Centralna Baza Danych Geologicznych</span></a></h1>
 						<h3>Naszą misją jest czynić geologię coraz bardziej dostępną.</h3>
 					</div>
 				</div>
@@ -238,10 +314,10 @@
 								<a href="cbdg_architektura_bazy.html"><strong>Architektura bazy</strong></a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html#slowniki">Słowniki bazy</a>
+								<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+								<a href="cbdg_architektura_bazy.html#slowniki">Słowniki bazy</a>
 							</li>
 							<li>
 								<a href="cbdg_zasoby_danych.html"><strong>Zasoby danych</strong></a>
@@ -294,10 +370,10 @@
 					<a href="cbdg_architektura_bazy.html">Architektura bazy</a>
 					<ul>
 						<li>
-							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
 						</li>
 						<li>
-							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
 						</li>
 					</ul>
 				</li>
@@ -325,14 +401,16 @@
 		</script>
 
 		<script type="text/javascript" src="images/_dynamic_002.php"></script>
-		<!--<script type="text/javascript" src="images/_dynamic.php"></script>
-		<script type="text/javascript" src="js/cookies.js"></script>
-		-->
+		<!--<script type="text/javascript" src="images/_dynamic.php"></script>-->
+		<!--<script type="text/javascript" src="js/cookies.js"></script>-->
 		
 		<link href="css/jquery.mmenu.all.css" rel="stylesheet" media="screen">
 		<link href="css/jquery.mmenu.positioning.css" rel="stylesheet" media="screen">
 		<link href="css/jquery.mmenu.css" rel="stylesheet" media="screen">
 		<script src="js/jquery.mmenu.min.all.js"></script>
+		
+		<link href="css/dropit.css" rel="stylesheet" media="screen">
+		<script src="js/dropit.js"></script>
 		
 		<script src="js/functions.js"></script>
 

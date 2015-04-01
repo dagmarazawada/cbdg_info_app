@@ -24,6 +24,82 @@ p {
 	text-align: justify;
 	margin-right: 40px;
 }
+
+.slide_title {
+	font-size: 3em;
+	font-weight: 600;
+	font-style: italic;
+	color: orange;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	margin-top: 0;
+}
+
+.cbdg-unit {
+	margin-top: 50px;
+}
+
+/* menu dla wersji desktop */
+.span7 {
+	width: inherit;
+}
+.menu_desktop {
+	float: right;
+	margin: 2.4em 1em 0 0;
+}
+.menu_desktop li {
+	display: inline-block;
+	text-align: left;
+}
+.menu ul { display: none; } /* Hide before plugin loads */
+.menu ul.dropit-submenu {
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    padding: 6px 0;
+    /*margin: 3px 0 0 1px;*/
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+       -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+}    
+.menu ul.dropit-submenu li {
+	display: block;
+}      
+.menu ul.dropit-submenu a {
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a868e;
+    padding: 0 18px;
+}
+.menu ul.dropit-submenu a:hover {
+	display: block;
+    background: #faa732;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* menu z prawej niewidoczne w wersji desktop*/
+#menuicoDiv {
+	visibility: hidden;
+}
+
+/* trick zeby po kliknieciu odnosnika w menu naglowek nie zaslanial tresci*/
+:target:before {
+content:"";
+display:block;
+height:90px; /* fixed header height*/
+margin:-90px 0 0; /* negative fixed header height */
+}
+
 @media (max-width: 1100px) {
 
 	/*wrapper calej strony*/
@@ -38,6 +114,14 @@ p {
 	}
 	p {
 		margin-right: 0;
+	}
+	
+	/* menu dla urzadzen mobilnych*/
+	.menu_desktop {
+		display:none;
+	}
+	#menuicoDiv {
+		visibility:visible;
 	}
 
 	/* naglowek z 3 prostokatami */
@@ -125,6 +209,7 @@ p {
 }
 
 @media (max-width: 720px) {
+	
 	/* buttony */
 	.btn {
 		display: block;
@@ -142,6 +227,7 @@ p {
 
 	.cbdg-unit {
 		padding: 20px 20px 60px 20px;
+		margin-top:60px;
 	}
 	
 	/* naglowek w stopce */
@@ -184,8 +270,8 @@ p {
 		font-size: 0.6em;
 	}
 	h1 .title_h1 {
-		display: block;;
-		margin: -1.2em 0 0 6em;
+		display: block;
+		margin: -0.5em 0 0 7.5em;
 	}
 	
 	.logo img {
@@ -194,6 +280,9 @@ p {
 		height: auto;
 		position: absolute;
 		top: 1em;
+	}
+	.cbdg-unit {
+		margin-top: 50px;
 	}
 	.cbdg-unit h1 {
 		font-size: 2.4em;
@@ -218,4 +307,10 @@ p {
 		font-size: 1.2em;
 	}
 
+}
+
+@media (max-width: 340px) {
+	h1 .title_h1 {
+		margin: -1em 0 0 6.5em;
+	}
 }

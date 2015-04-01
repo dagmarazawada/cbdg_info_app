@@ -9,7 +9,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>CBDG 2015</title>
+		<title>Central Geological Database</title>
 		<meta name="description" content="The Central Geological Database (CBDG) is the largest Polish collection of digital geological data.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/abc.js"></script>
@@ -25,7 +25,7 @@
 		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>outdated!</em> <a href="http://browsehappy.com/">Please update</a> to view this page</p><![endif]-->
 		<div class="page-content-wrapper">
 
-			<header class="header">
+			<header class="header fixed">
 				<div class="row">
 					
 					<div id="menuicoDiv">
@@ -37,8 +37,54 @@
 					</div>
 					
 					<div class="span2 lang">
-						<img src="css/img/lang_uk.png">
 						<a href="index.html"><img src="css/img/lang_pl.png"></a>
+					</div>
+					
+					<div class="span7 menu_desktop">
+						<ul class="menu">
+							<li><a class="btn btn-warning btn-large" href="index_en.html">Home</a></li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_o_bazie_en.html">About database</a>
+								<ul>
+									<li>
+										<a href="cbdg_o_bazie_en.html#historia">History</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie_en.html#finansowanie">Financing</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie_en.html#przyszlosc">Future</a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie_en.html#postery">Posters</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_architektura_bazy_en.html">Architecture</a>
+								<ul>
+									<li>
+										<a href="cbdg_architektura_bazy_en.html#podsystemy">Subsystems</a>
+									</li>
+									<li>
+										<a href="cbdg_architektura_bazy_en.html#slowniki">Database dictionaries</a>
+									</li>									
+								</ul>
+							</li>
+							<li>
+								<a class="btn btn-warning btn-large" href="cbdg_zasoby_danych_en.html">Data resources</a>
+								<ul>
+									<li>
+										<a href="cbdg_zasoby_danych_en.html#bazy_zrodlowe">Source databases</a>
+									</li>
+									<li>
+										<a href="cbdg_zasoby_danych_en.html#wprowadzanie_danych">Adding data</a>
+									</li>
+								</ul>
+							</li>
+							<li><a class="btn btn-warning btn-large" href="cbdg_kontakt_en.html">Contact</a></li>
+						</ul>
+
 					</div>
 
 				</div>
@@ -101,43 +147,39 @@
 								<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 830px; height: 300px; overflow: hidden; background: #2A261B">
 									<div>
 										<div class="slider-content">
-											<img src="images/title_cbdg.png" alt="CBDG" >
+											<h2 class="slide_title">CBDG</h2>
 											<blockquote>
 												CBDG is gathering and sharing information on geology and related sciences in order to better understand the geological structure of Poland, support government, industry and science.
 											</blockquote>
-											<cite>— Wojciech Paciura, CBDG coordinator</cite>
 										</div>
-										<a> <img u="image" src2="images/cbdg2.jpg"/> </a>
+										<a href="http://geoportal.pgi.gov.pl" target="blank"> <img u="image" src2="images/cbdg2.jpg"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<img src="images/title_dokumenty.png" alt="Dokumentacje geologiczne" >
+											<h2 class="slide_title">Reports</h2>
 											<blockquote>
 												Catalogue data of archival geological studies gathered in the National Geological Archives and other domestic archives.
 											</blockquote>
-											<cite>— Radosław Markiewicz, Subsystem CBDG Reports manager</cite>
 										</div>
-										<a> <img u="image" src2="images/dokumenty.jpg"/> </a>
+										<a href="http://dokumenty.pgi.gov.pl" target="blank"> <img u="image" src2="images/dokumenty.jpg"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<img src="images/title_otwory.png" alt="Otwory wiertnicze" >
+											<h2 class="slide_title">Boreholes</h2>
 											<blockquote>
 												Subsystem CBDG Boreholes provides detailed information on stratigraphic profiles, lithology, geophysical surveys and drill cores.
 											</blockquote>
-											<!--<cite>— Dominik Stańczuk, Subsystem CBDG Otwory main architect</cite>-->
 										</div>
-										<a> <img u="image" src2="images/otwory.jpg"/> </a>
+										<a href="http://otwory.pgi.gov.pl" target="blank"> <img u="image" src2="images/otwory.jpg"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<img src="images/title_jaskinie.png" alt="FifthRing" >
+											<h2 class="slide_title">Caves</h2>
 											<blockquote>
 												Current knowledge about caves developed on the information gathered by the Polish Society of Friends of the Earth Sciences (PTPNoZ).
 											</blockquote>
-											<cite>— Ewa Machalska, Subsystem CBDG Caves manager</cite>
 										</div>
-										<a> <img u="image" src2="images/jaskinie.jpg"/> </a>
+										<a href="http://jaskinie.pgi.gov.pl" target="blank"> <img u="image" src2="images/jaskinie.jpg"/> </a>
 									</div>
 								</div>
 
@@ -207,13 +249,13 @@
 								<a href="#Geofizyka" data-toggle="tab" class="gc-icon gfiz-icon">Geophysics</a>
 							</li>
 							<li>
-								<a href="#Inzynierska" data-toggle="tab" class="gc-icon inz-icon">Engineering geology</a>
+								<a href="#Inzynierska" data-toggle="tab" class="gc-icon inz-icon">Engineering</a>
 							</li>
 							<li>
 								<a href="#Hydrogeologia" data-toggle="tab" class="gc-icon hydr-icon">Hydrogeology</a>
 							</li>
 							<li>
-								<a href="#Srodowisko" data-toggle="tab" class="gc-icon srod-icon">Environmental geology</a>
+								<a href="#Srodowisko" data-toggle="tab" class="gc-icon srod-icon">Environmental</a>
 							</li>
 
 						</ul>
@@ -267,28 +309,28 @@
 
 									<ul class="green-checks">
 										<li>
-											HYDRO Bank
+											The HYDRO Bank
 										</li>
 										<li>
-											Grpundwater monitoring database
+											Groundwater Monitoring
 										</li>
 										<li>
-											Major groundwater reservoirs (GZWP)
+											Major Groundwater Reservoirs
 										</li>
 										<li>
-											Hydrogeological map of Poland (MhP)
+											Hydrogeological Map of Poland
 										</li>
 										<li>
-											Hydrogeological map of Poland - First water-bearing level (MhP PPW)
+											Hydrogeological Map of Poland: First Aquifer
 										</li>
 										<li>
-											Flooding risk areas
+											Areas at High Risk of Flooding
 										</li>
 										<li>
-											Water consumption
+											Intake Database
 										</li>
 										<li>
-											Disposable water resources
+											Disposable Groundwater Resources
 										</li>
 									</ul>
 
@@ -344,7 +386,7 @@
 											Laboratory tests of samples of soils and rocks
 										</li>
 										<li>
-											Geological engineering cartography and valorisation
+											Engineering-geological cartography and valorisation
 										</li>
 										<li>
 											Geoanalysis and modeling
@@ -439,7 +481,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="span12">
-						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib01.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Central Geological Database</span></a></h1>
+						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Central Geological Database</span></a></h1>
 						<h3>Our mission is to make geology more and more available.</h3>
 					</div>
 				</div>
@@ -479,41 +521,41 @@
 								<strong>About CBDG:</strong>
 							</li>
 							<li>
-								<a href="cbdg_o_bazie.html"><strong>About database</strong></a>
+								<a href="cbdg_o_bazie_en.html"><strong>About database</strong></a>
 							</li>
 							<li>
-								<a href="cbdg_o_bazie.html#historia">History</a>
+								<a href="cbdg_o_bazie_en.html#historia">History</a>
 							</li>
 							<li>
-								<a href="cbdg_o_bazie.html#finansowanie">Financing</a>
+								<a href="cbdg_o_bazie_en.html#finansowanie">Financing</a>
 							</li>
 							<li>
-								<a href="cbdg_o_bazie.html#przyszlosc">Future</a>
+								<a href="cbdg_o_bazie_en.html#przyszlosc">Future</a>
 							</li>
 							<li>
-								<a href="cbdg_o_bazie.html#postery">Posters</a>
+								<a href="cbdg_o_bazie_en.html#postery">Posters</a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html"><strong>Database architecture</strong></a>
+								<a href="cbdg_architektura_bazy_en.html"><strong>Database architecture</strong></a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html#slowniki">Database dictionaries</a>
+								<a href="cbdg_architektura_bazy_en.html#podsystemy">Subsystems</a>
 							</li>
 							<li>
-								<a href="cbdg_architektura_bazy.html#podsystemy">Subsystems</a>
+								<a href="cbdg_architektura_bazy_en.html#slowniki">Database dictionaries</a>
 							</li>
 							<li>
-								<a href="cbdg_zasoby_danych.html"><strong>Data resources</strong></a>
+								<a href="cbdg_zasoby_danych_en.html"><strong>Data resources</strong></a>
 							</li>
 							<li>
-								<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Source databases</a>
+								<a href="cbdg_zasoby_danych_en.html#bazy_zrodlowe">Source databases</a>
 							</li>
 							<li>
-								<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Entering the data</a>
+								<a href="cbdg_zasoby_danych_en.html#wprowadzanie_danych">Adding data</a>
 							</li>
 														
 							<li>
-								<a href="cbdg_kontakt.html"><strong>Contact</strong></a>
+								<a href="cbdg_kontakt_en.html"><strong>Contact</strong></a>
 							</li>
 						</ul>
 					</div>
@@ -530,49 +572,49 @@
 		<nav id="menu">
 			<ul>
 				<li>
-					<a href="index.html">Home</a>
+					<a href="index_en.html">Home</a>
 				</li>
 				<li>
-					<a href="cbdg_o_bazie.html">O Bazie</a>
+					<a href="cbdg_o_bazie_en.html">O Bazie</a>
 					<ul>
 						<li>
-							<a href="cbdg_o_bazie.html#historia">Historia</a>
+							<a href="cbdg_o_bazie_en.html#historia">Historia</a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+							<a href="cbdg_o_bazie_en.html#finansowanie">Finansowanie</a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+							<a href="cbdg_o_bazie_en.html#przyszlosc">Przyszłość</a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#postery">Postery</a>
+							<a href="cbdg_o_bazie_en.html#postery">Postery</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="cbdg_architektura_bazy.html">Architektura bazy</a>
-					<ul>
+					<a href="cbdg_architektura_bazy_en.html">Architektura bazy</a>
+					<ul>						
 						<li>
-							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+							<a href="cbdg_architektura_bazy_en.html#podsystemy">Podsystemy</a>
 						</li>
 						<li>
-							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="cbdg_zasoby_danych.html">Zasoby danych</a>
-					<ul>
-						<li>
-							<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
-						</li>
-						<li>
-							<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
+							<a href="cbdg_architektura_bazy_en.html#slowniki">Słowniki</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="cbdg_kontakt.html">Kontakt</a>
+					<a href="cbdg_zasoby_danych_en.html">Zasoby danych</a>
+					<ul>
+						<li>
+							<a href="cbdg_zasoby_danych_en.html#bazy_zrodlowe">Bazy źródłowe</a>
+						</li>
+						<li>
+							<a href="cbdg_zasoby_danych_en.html#wprowadzanie_danych">Wprowadzanie danych</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="cbdg_kontakt_en.html">Kontakt</a>
 				</li>
 			</ul>
 		</nav>
@@ -584,9 +626,8 @@
 		</script>
 
 		<script type="text/javascript" src="images/_dynamic_002.php"></script>
-		<!--<script type="text/javascript" src="images/_dynamic.php"></script>
-		<script type="text/javascript" src="js/cookies.js"></script>
-		-->
+		<!--<script type="text/javascript" src="images/_dynamic.php"></script>-->
+		<!--<script type="text/javascript" src="js/cookies_en.js"></script>-->
 
 		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
@@ -596,6 +637,9 @@
 		<link href="css/jquery.mmenu.positioning.css" rel="stylesheet" media="screen">
 		<link href="css/jquery.mmenu.css" rel="stylesheet" media="screen">
 		<script src="js/jquery.mmenu.min.all.js"></script>
+		
+		<link href="css/dropit.css" rel="stylesheet" media="screen">
+		<script src="js/dropit.js"></script>
 		
 		<script src="js/functions.js"></script>
 
