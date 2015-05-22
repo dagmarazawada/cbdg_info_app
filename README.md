@@ -16,4 +16,4 @@ This is android mobile info-app project developed in html5, css & js and phonega
 
 ### Who do I talk to? ###
 
-* Repo owner & admin: dzaw
+* Repo owner & admin: [Dagmara](https://bitbucket.org/dzaw)
