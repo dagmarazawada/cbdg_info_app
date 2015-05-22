@@ -6,6 +6,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline;
 }
+html {
+	background-color: #f5f5f5;
+	color: #333;
+}
+html, body {
+	height: 100%;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -149,7 +156,7 @@ textarea {
 body {
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 13px;
+	font-size: 0.82em;
 	line-height: 18px;
 	color: #333333;
 }
@@ -180,6 +187,7 @@ a:hover {
 [class*="span"] {
 	float: left;
 	margin-left: 20px;
+	padding-right: 40px;
 }
 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
 	width: 900px;
@@ -363,7 +371,7 @@ a:hover {
 p {
 	margin: 0 0 1.5em;
 	line-height: 1.5em;
-	color: #555;
+	color: #000;
 }
 p small {
 	font-size: 11px;
@@ -537,7 +545,7 @@ blockquote.pull-right p, blockquote.pull-right small {
 	text-align: right;
 }
 q:before, q:after, blockquote:before, blockquote:after {
-	content: "";
+	//content: "";
 }
 address {
 	display: block;
@@ -1398,7 +1406,8 @@ legend + .control-group {
 }
 .btn-large {
 	padding: 9px 14px;
-	font-size: 15px;
+	/*font-size: 15px;*/
+	font-size: 1.15em;
 	line-height: normal;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1421,8 +1430,8 @@ legend + .control-group {
 	line-height: 14px;
 }
 .btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
-	color: #ffffff;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: #000;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
 }
 .btn-primary.active, .btn-warning.active, .btn-danger.active, .btn-success.active, .btn-info.active, .btn-inverse.active {
 	color: rgba(255, 255, 255, 0.75);
@@ -3169,12 +3178,6 @@ a:active {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-html {
-	background-color: #f5f5f5;
-}
-html, body {
-	height: 100%;
-}
 .page-content-wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -3189,13 +3192,17 @@ html, body {
 	text-decoration: underline;
 }
 .small-text {
-	color: #ccc;
+	color: #333;
 	font-size: 12px;
 	margin: 15px 0px;
 }
 
 .header h1 img {
 	display: block;
+}
+.header h1 a:hover {
+	color: black;
+	text-decoration: none;
 }
 
 .footer {
@@ -3218,10 +3225,10 @@ html, body {
 	color: #333;
 	padding: 15px 0px;
 }
-.logo_footer h1 img  {
-	float:left;
-	width:95px;
-	height:105px;
+.logo_footer h1 img {
+	float: left;
+	width: 95px;
+	height: 105px;
 }
 .logo_footer {
 	margin-top: -28px;
@@ -3232,17 +3239,19 @@ html, body {
 	text-decoration: none;
 }
 .title_h1_footer {
-	display:block;
+	display: block;
 	margin: -83px 0 0 107px;
 	font-size: 1.9em;
-	line-height:1.1em;
-	color:#000;
+	line-height: 1.1em;
+	color: #000;
 	text-shadow: 0px 1px 1px #FFF;
 }
-.footer h3 {
-	color: #FFF;
-	font-style:italic;
+.footer h3, .footer h2 {
+	color: #fff;
 	text-shadow: 2px 2px 1px #000;
+}
+.footer h2 {
+	font-size: 18px;
 }
 .footer ul {
 	list-style: none;
@@ -3265,7 +3274,7 @@ html, body {
 	margin-bottom: 20px;
 }
 .footer a {
-	color: #5B361D;
+	color: #000;
 }
 
 .green-checks {
@@ -3397,7 +3406,7 @@ top:60px;
 	border: 1px solid #dadada;
 	padding: 0px;
 	margin: 0 0 40px 60px;
-	color: #333;
+	color: #000;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -3421,7 +3430,7 @@ top:60px;
 	position: relative;
 }
 .better-manage .row {
-	position: relative;
+	position: relative;//
 	height: 429px;
 }
 .better-manage .slider-container {
@@ -3429,6 +3438,22 @@ top:60px;
 	position: absolute;
 	right: 50px;
 	top: -20px;
+}
+.container-min {
+	right: 68px !important;
+	top: 40px !important;
+}
+.container-min li {
+	padding: 1em;
+}
+.container-min img {
+	width: 400px !important;
+	height: auto !important;
+	border: 2px solid #fff;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	-o-box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
 }
 .better-manage ul.slider {
 	list-style: none;
@@ -3697,6 +3722,10 @@ li.active a.gc-icon.export-icon, li.selected a.gc-icon.export-icon {
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	font-family: 'Helvetica Nueve', Helvetica, sans-serif;
 }
+blockquote span {
+	font-size: 1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 sup {
 	font-size: 0.4em;
 	vertical-align: super;
@@ -3748,5 +3777,9 @@ sup {
 
 .img-wrap-right {
 	float: right;
+	margin: 10px;
+}
+.img-wrap-left {
+	float: left;
 	margin: 10px;
 }

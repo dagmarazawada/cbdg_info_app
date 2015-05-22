@@ -1,0 +1,65 @@
+NOTES
+
+phonegap
+http://phonegap.com/install/
+
+phonegap create my-app
+cd
+cordova run android --device
+
+cordova platform add android
+cordova plugin add org.apache.cordova.geolocation
+
+
+phonegap local plugin add https://github.com/phonegap-build/PushPlugin
+sudo npm install -g node-gcm
+RUN my notify.js: node notify.js
+
+
+/Development/android-sdk-macosx/platform-tools/adb logcat
+
+
+sudo android
+Android API 19
+
+brew install ant
+
+http://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface
+
+cordova emulate android
+
+emulator androida
+android avd
+
+lepiej na urzadzeniu: przelaczyc urzadzenie w tryb programisty (jesli pierwszy raz - wejsc w info o urzadzeniu i 7x klik w nr wersji; pokaza sie opcje programisty w menu ustawien, wejsc w tryb debugowania usb; uwaga urzadzenie powinno byc przelaczone w tryb usb Camera Aparat PTP)
+
+debug na urzadzeniu:
+cordova run android --device
+
+
+cordova emulate ios
+
+
+create ipa file
+
+cordova build ios --device
+cd platforms/ios/build/device
+/usr/bin/xcrun -sdk iphoneos PackageApplication "$(pwd)/$PROJECT_NAME.app" -o "$(pwd)/$PROJECT_NAME.ipa"
+
+
+in xcode create ipa:
+
+open project in xcode, Product -> Archive, find archive in Finder,
+xcodebuild -exportArchive -exportFormat ipa -archivePath <FILE_NAME>.xcarchive -exportPath <FILE_NAME>.ipa
+
+http://stackoverflow.com/questions/26928721/how-to-create-ipa-in-xcode-6-without-apple-developer-account
+
+
+GIT errors bitbucket
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/bitbucket.rsa
+
+git init
+git push origin master
+

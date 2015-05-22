@@ -8,20 +8,39 @@ nav:not(.mm-menu)
 }
 .menuico
 {
-	background: center center no-repeat #dcdcdc;
-	background-image: url( "img/bars_orange.png" );
+	background: center center no-repeat transparent;
+	background-image: url( "img/bars_grey.png" );
 
 	display: block;
 	width: 40px;
 	height: 40px;
 	position: relative;
+	
+	border: 1px solid #b2b2b2;
+	-webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+       -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+	
+}
+
+.menuico:hover {
+	background-image: url( "img/bars.png" );
+}
+.menuico:active, .menuico:visited {
+	background: center center no-repeat transparent;
+	background-image: url( "img/bars.png" );
 }
 
 #menuicoDiv {
 	position: absolute;
-	top: 0px;
-	right: 10px;
+	top: 5px;
+	right: 12px;
 }
 #menuicoDiv a {
 	font-color: black;
 }
+
+

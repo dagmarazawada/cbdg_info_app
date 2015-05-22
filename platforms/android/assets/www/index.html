@@ -3,86 +3,100 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class=" js no-flexbox canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+<html lang="pl">
 	<!--<![endif]-->
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Centralna Baza Danych Geologicznych</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CBDG</title>
 		<meta name="description" content="Centralna Baza Danych Geologicznych (CBDG) jest największym w Polsce zbiorem cyfrowych danych geologicznych.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="js/abc.js"></script>
 		<link href="css/cbdg1.css" rel="stylesheet" media="screen">
 		<link href="css/cbdg2.css" rel="stylesheet" media="screen">
+		<link href="css/hover.css" rel="stylesheet" media="all">
 		<link href="css/cbdg_responsive.css" rel="stylesheet" media="screen">
-		<script src="js/modernizr-2.js"></script>
-
 		<link rel="shortcut icon" href="http://geoportal.pgi.gov.pl/favicon.ico">
-		<img class="jwvxqtqdiqdbrdnpongg" src="images/seg.gif" border="0" height="1" width="1"><img src="images/a.gif" border="0" height="1" width="1">
+		<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen">
+		<link href="css/jquery.mmenu.all.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="css/jquery.mmenu.positioning.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="css/jquery.mmenu.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="css/dropit.css" type="text/css" rel="stylesheet" media="screen">
 	</head>
 	<body>
+		<img class="jwvxqtqdiqdbrdnpongg" src="images/seg.gif" border="0" height="1" width="1" alt="separator"><img src="images/a.gif" border="0" height="1" width="1" alt="separator">
 		<!--[if lt IE 7]><p class=chromeframe>Masz <em>przestarzałą przeglądarkę!</em> <a href="http://browsehappy.com/">Zmień ją na coś nowszego</a> żeby przeglądąć tę stronę.</p><![endif]-->
 		<div class="page-content-wrapper">
 
 			<header class="header fixed">
-				<div class="row">
+				<div class="row" id="header_row">
 
 					<div id="menuicoDiv">
-						<a class="menuico" href="#menu" style="right: 0;"></a>
+						<a class="menuico hvr-fade" href="#menu" style="right: 0;">&nbsp;</a>
 					</div>
 
 					<div class="span3">
-						<h1 class="logo"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><span class="title_h1">Państwowy&nbsp;Instytut&nbsp;Geologiczny Państwowy&nbsp;Instytut&nbsp;Badawczy</span></h1>
+						<h1 class="logo"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"><span class="title_h1" data-i18n="[html]title.PGI-NRI"></span></a></h1>
 					</div>
-					
+
 					<div class="span2 lang">
-						<a href="index_en.html"><img src="css/img/lang_uk.png"></a>
+						<div style="cursor: pointer;" data-i18n="[html]menu.flag_img;"></div>
 					</div>
 
 					<div class="span7 menu_desktop">
 						<ul class="menu">
-							<li><a class="btn btn-warning btn-large" href="index.html">Home</a></li>
 							<li>
-								<a class="btn btn-warning btn-large" href="cbdg_o_bazie.html">O Bazie</a>
+								<a class="menu_desktop_btn hvr-fade" href="index.html"><span data-i18n="menu.CBDG"></span></a>
+							</li>
+							<li>
+								<a class="menu_desktop_btn hvr-fade" href="cbdg_o_bazie.html"><span data-i18n="menu.O_bazie"></span></a>
 								<ul>
 									<li>
-										<a href="cbdg_o_bazie.html#historia">Historia</a>
+										<a href="cbdg_o_bazie.html#architektura"><span data-i18n="menu.Architektura"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+										<a href="cbdg_o_bazie.html#podsystemy"><span data-i18n="menu.Podsystemy"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+										<a href="cbdg_o_bazie.html#slowniki"><span data-i18n="menu.Slowniki"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_o_bazie.html#postery">Postery</a>
+										<a href="cbdg_o_bazie.html#historia"><span data-i18n="menu.Historia"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#wspolpraca_ue"><span data-i18n="menu.Wspolpraca"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#finansowanie"><span data-i18n="menu.Finansowanie"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#przyszlosc"><span data-i18n="menu.Przyszlosc"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#postery"><span data-i18n="menu.Postery"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#kontakt"><span data-i18n="menu.Kontakt"></span></a>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<a class="btn btn-warning btn-large" href="cbdg_architektura_bazy.html">Architektura bazy</a>
-								<ul>									
-									<li>
-										<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
-									</li>
-									<li>
-										<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a class="btn btn-warning btn-large" href="cbdg_zasoby_danych.html">Zasoby danych</a>
+								<a class="menu_desktop_btn hvr-fade" href="cbdg_o_danych.html"><span data-i18n="menu.O_danych"></span></a>
 								<ul>
 									<li>
-										<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
+										<a href="cbdg_o_danych.html#wprowadzanie_danych"><span data-i18n="menu.Wprowadzanie"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
+										<a href="cbdg_o_danych.html#zasoby_danych"><span data-i18n="menu.Zasoby"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_danych.html#bazy_zrodlowe"><span data-i18n="menu.Bazy_zrodlowe"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_danych.html#zasady_dostepu"><span data-i18n="menu.Zasady_dostepu"></span></a>
 									</li>
 								</ul>
 							</li>
-							<li><a class="btn btn-warning btn-large" href="cbdg_kontakt.html">Kontakt</a></li>
 						</ul>
 
 					</div>
@@ -92,32 +106,34 @@
 
 			<div class="cbdg-unit">
 				<div class="container">
-					<h1><a href="index.html">Centralna Baza Danych Geologicznych</a></h1>
-					<h2>coraz bardziej dostępna geologia</h2>
-
+					<div id="mainTitle" style="margin: 0; color:white;">
+						<h1><a href="index.html"><span data-i18n="title.h1"></span></a></h1>
+						<h2><span data-i18n="title.h2"></span></h2>
+					</div>
+					
 					<ul class="fly3">
 						<li class="span3 cbdg float-up">
-							<h3>CBDG</h3>
-							<h4>Centralna Baza Danych Geologicznych to największy w&nbsp;Polsce zbiór cyfrowych danych geologicznych.</h4>
+							<h3><span data-i18n="content.CBDG"></span></h3>
+							<h4><span data-i18n="[html]content.CBDG-text"></span></h4>
 						</li>
 						<li class="span3 portal float-up">
-							<h3>Portal CBDG</h3>
-							<h4>Geologiczne dane przestrzenne on-line. </br>Przelądarki map, usługi WMS, pliki SHP do pobrania.</h4>
+							<h3><span data-i18n="content.Portal"></span></h3>
+							<h4><span data-i18n="[html]content.Portal-text"></span></h4>
 						</li>
 						<li class="span3 darmo float-up">
-							<h3>Bezpłatny dostęp</h3>
-							<h4>Podstawowe informacje ze wszystkich dziedzin geologii udostępniane są całkowicie bezpłatnie.</h4>
+							<h3><span data-i18n="content.Darmo"></span></h3>
+							<h4><span data-i18n="content.Darmo-text"></span></h4>
 						</li>
 					</ul>
 
 					<ul class="fly4">
 						<li class="span3 portal float-up">
-							<h3>CBDG</h3>
-							<h4>Centralna Baza Danych Geologicznych to największy w&nbsp;Polsce zbiór cyfrowych danych geologicznych.</h4>
-							<h3>Portal CBDG</h3>
-							<h4>Geologiczne dane przestrzenne on-line. </br>Przelądarki map, usługi WMS, pliki SHP do pobrania.</h4>
-							<h3>Bezpłatny dostęp</h3>
-							<h4>Podstawowe informacje ze wszystkich dziedzin geologii udostępniane są całkowicie bezpłatnie.</h4>
+							<h3><span data-i18n="content.CBDG"></span></h3>
+							<h4><span data-i18n="[html]content.CBDG-text"></span></h4>
+							<h3><span data-i18n="content.Portal"></span></h3>
+							<h4><span data-i18n="[html]content.Portal-text"></span></h4>
+							<h3><span data-i18n="content.Darmo"></span></h3>
+							<h4><span data-i18n="content.Darmo-text"></span></h4>
 						</li>
 					</ul>
 
@@ -128,8 +144,8 @@
 
 				<div class="row get-started-now">
 					<div class="span10 offset1 white-panel button-text-panel">
-						<h2>Potrzebujesz danych geologicznych?</h2>
-						<a href="http://geoportal.pgi.gov.pl" class="btn btn-large btn-warning">Szukaj</a>
+						<h2><span data-i18n="content.Geodata"></span></h2>
+						<a href="http://geoportal.pgi.gov.pl/" class="btn btn-large btn-warning"><span data-i18n="content.Portal"></span></a>
 					</div>
 				</div>
 
@@ -139,63 +155,87 @@
 
 							<div id="slider1_container" style="display: none; position: relative; margin: 0 auto; width: 830px; height: 300px; overflow: hidden;">
 
-								<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+								<div style="position: absolute; top: 0px; left: 0px;">
 									<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;"></div>
 									<div style="position: absolute; display: block; background: url(css/img/loading.gif) no-repeat center center; top: 0px; left: 0px;width: 100%;height:100%;"></div>
 								</div>
 
-								<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 830px; height: 300px; overflow: hidden; background: #2A261B">
+								<div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 830px; height: 300px; overflow: hidden; background: #2A261B">
 									<div>
 										<div class="slider-content">
-											<h2 class="slide_title">CBDG</h2>
+											<h2 class="slide_title"><span data-i18n="slider.CBDG"></span></h2>
 											<blockquote>
-												CBDG gromadzi i udostępnia informacje z dziedziny geologii i&nbsp;nauk pokrewnych w celu lepszego poznania budowy geologicznej Polski, wspierania administracji, przemysłu, nauki.
+												<span data-i18n="[html]slider.CBDG-text"></span>
 											</blockquote>
 											<!-- <cite></cite> -->
 										</div>
-										<a href="http://geoportal.pgi.gov.pl" target="blank"> <img u="image" src2="images/cbdg2.jpg"/> </a>
+										<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet" target="blank"> <img src="images/cbdg2.jpg" alt="CBDG"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<h2 class="slide_title">Dokumenty</h2>
+											<h2 class="slide_title"><span data-i18n="slider.Dok"></span></h2>
 											<blockquote>
-												Dane katalogowe archiwalnych opracowań geologicznych zgromadzonych w Narodowym Archiwum Geologicznym a także w&nbsp;innych archiwach w kraju.
+												<span data-i18n="[html]slider.Dok-text"></span>
 											</blockquote>
 										</div>
-										<a href="http://dokumenty.pgi.gov.pl" target="blank"> <img u="image" src2="images/dokumenty.jpg"/> </a>
+										<a href="http://dokumenty.pgi.gov.pl" target="blank"> <img src="images/dokumenty.jpg" alt="Dokumenty"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<h2 class="slide_title" style="font-size: 2.3em;">Otwory wiertnicze</h2>
+											<h2 class="slide_title" style="font-size: 2.3em;"><span data-i18n="slider.Otwory"></span></h2>
 											<blockquote>
-												Podsystem CBDG Otwory wiertnicze udostępnia szczegółowe informacje o&nbsp;profilach stratygraficzych, litologicznych, badaniach geofizycznych i rdzeniach wiertniczych.
+												<span data-i18n="[html]slider.Otwory-text"></span>
 											</blockquote>
 										</div>
-										<a href="http://otwory.pgi.gov.pl" target="blank"> <img u="image" src2="images/otwory.jpg"/> </a>
+										<a href="http://geoportal.pgi.gov.pl/portal/page/portal/otwory" target="blank"> <img src="images/otwory.jpg" alt="Otwory"/> </a>
 									</div>
 									<div>
 										<div class="slider-content">
-											<h2 class="slide_title">Jaskinie</h2>
+											<h2 class="slide_title" style="font-size: 2.2em;"><span data-i18n="slider.Rdzenie"></span></h2>
 											<blockquote>
-												Aktualny stan wiedzy o jaskiniach opracowany na podstawie informacji zgromadzonych przez Polskie Towarzystwo Przyjaciół Nauk o Ziemi (PTPNoZ).
+												<span data-i18n="[html]slider.Rdzenie-text"></span>
 											</blockquote>
 										</div>
-										<a href="http://jaskinie.pgi.gov.pl" target="blank"> <img u="image" src2="images/jaskinie.jpg"/> </a>
+										<a href="http://otwory.pgi.gov.pl" target="blank"> <img src="images/rdzenie.jpg" alt="Otwory"/> </a>
+									</div>
+									<div>
+										<div class="slider-content">
+											<h2 class="slide_title"><span data-i18n="slider.Jaskinie"></span></h2>
+											<blockquote>
+												<span data-i18n="[html]slider.Jaskinie-text"></span>
+											</blockquote>
+										</div>
+										<a href="http://jaskinie.pgi.gov.pl" target="blank"> <img src="images/jaskinie.jpg" alt="Jaskinie"/> </a>
+									</div>
+									<div>
+										<div class="slider-content">
+											<h2 class="slide_title" style="font-size: 2.5em; line-height: 1.2em;"><span data-i18n="slider.Kolekcje"></span></h2>
+											<blockquote>
+												<span data-i18n="[html]slider.Kolekcje-text"></span>
+											</blockquote>
+										</div>
+										<a href="http://kolekcje.pgi.gov.pl" target="blank"> <img src="images/kolekcje.jpg" alt="Kolekcje"/> </a>
+									</div>
+									<div>
+										<div class="slider-content">
+											<h2 class="slide_title"><span data-i18n="slider.Geofizyka"></span></h2>
+											<blockquote>
+												<span data-i18n="[html]slider.Geofizyka-text"></span>
+											</blockquote>
+										</div>
+										<a href="http://geofizyka.pgi.gov.pl" target="blank"> <img src="images/geofizyka.jpg" alt="Geofizyka"/> </a>
 									</div>
 								</div>
 
-								<div u="navigator" class="jssorb05" style="position: absolute; bottom: 16px; right: 6px;">
-									<div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+								<div data-u="navigator" class="jssorb05" style="position: absolute; bottom: 16px; left: 280px;">
+									<div data-u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
 								</div>
-								<span u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 123px; left: 8px;"></span>
-								<span u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 123px; right: 8px"></span>
+								<span data-u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 123px; left: 8px;"></span>
+								<span data-u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 123px; right: 8px"></span>
 							</div>
 							<div class="button-text-panel">
-								<h3>Ponad 1 500 000 odwiedzin rocznie</h3>
-								<a href="http://geoportal.pgi.gov.pl" class="btn btn-large btn-warning">Zacznij już teraz</a>
-								<!--
-								<a href="http://geoportal.pgi.gov.pl" class="btn btn-large">Zapraszmy na wycieczkę</a>
-								-->
+								<h3><span data-i18n="content.Wizyty"></span></h3>
+								<a href="http://geoportal.pgi.gov.pl" class="btn btn-large btn-warning"><span data-i18n="content.geoportalpgigovpl"></span></a>
 							</div>
 						</div>
 					</div>
@@ -207,31 +247,31 @@
 							<div class="row cf">
 								<div class="span5">
 									<div class="padding-large">
-										<h2>Odwiedź Portal CBDG aby przeglądać mapy geologiczne.</h2>
+										<h2><span data-i18n="[html]content.Odwiedz"></span></h2>
 										<ul class="green-checks">
 											<li>
-												<a href="http://bazagis.pgi.gov.pl/website/cbdg/" title="CBDG - przeglądarka geograficzna">Geologiczne mapy w przeglądarce</a>
+												<a href="http://bazagis.pgi.gov.pl/website/cbdg/" title="CBDG - przeglądarka geograficzna"><span data-i18n="content.Przegladarka"></span></a>
 											</li>
 											<li>
-												<a href="http://m.bazagis.pgi.gov.pl/cbdg/" title="CBDG - aplikacja mobilna GeoLOG">Geologiczne mapy w telefonie</a>
+												<a href="http://m.bazagis.pgi.gov.pl/cbdg/" title="CBDG - aplikacja mobilna GeoLOG"><span data-i18n="content.Telefon"></span></a>
 											</li>
 											<li>
-												<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet/serwisy_gis"title="CBDG - usługi mapowe WMS/WFS">Usługi mapowe WMS/WFS</a>
+												<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet/serwisy_gis" title="CBDG - usługi mapowe WMS/WFS"><span data-i18n="content.Uslugi"></span></a>
 											</li>
 											<li>
-												<a href="http://dm.pgi.gov.pl/dm/" title="CBDG - Download manager">Pobierz pliki SHP</a>
+												<a href="http://dm.pgi.gov.pl/dm/" title="CBDG - Download manager"><span data-i18n="content.SHP"></span></a>
 											</li>
 										</ul>
-										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">Zacznij już teraz</a>
+										<a href="http://geoportal.pgi.gov.pl/  " class="btn btn-warning btn-large"><span data-i18n="content.Mapy-geol"></span></a>
 										<p class="small-text">
-											Bezpłatny dostęp do danych
+											<span data-i18n="content.Darmo-map"></span>
 										</p>
 									</div>
 								</div>
-								<div class="span8 slider-container">
+								<div class="span8 slider-container container-min">
 									<ul class="slider pull-right">
 										<li>
-											<a href="http://geoportal.pgi.gov.pl"> <img class="portal" src="images/portal_CBDG_2015.jpg" alt="Portal CBDG" title="Portal CBDG"></a>
+											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet"> <img src="images/portal_CBDG_2015.jpg" alt="Portal CBDG" title="Portal CBDG"></a>
 										</li>
 									</ul>
 								</div>
@@ -244,19 +284,19 @@
 					<div class="span12 white-panel no-padding">
 						<ul class="nav nav-tabs">
 							<li class="active">
-								<a href="#Geologia" data-toggle="tab" class="gc-icon geol-icon">Geologia</a>
+								<a href="#Geologia" data-toggle="tab" class="gc-icon geol-icon"><span data-i18n="menu.Geologia"></span></a>
 							</li>
 							<li>
-								<a href="#Geofizyka" data-toggle="tab" class="gc-icon gfiz-icon">Geofizyka</a>
+								<a href="#Geofizyka" data-toggle="tab" class="gc-icon gfiz-icon"><span data-i18n="menu.Geofizyka"></span></a>
 							</li>
 							<li>
-								<a href="#Inzynierska" data-toggle="tab" class="gc-icon inz-icon">Inżynierska</a>
+								<a href="#Inzynierska" data-toggle="tab" class="gc-icon inz-icon"><span data-i18n="menu.Inzynierska"></span></a>
 							</li>
 							<li>
-								<a href="#Hydrogeologia" data-toggle="tab" class="gc-icon hydr-icon">Hydrogeologia</a>
+								<a href="#Hydrogeologia" data-toggle="tab" class="gc-icon hydr-icon"><span data-i18n="menu.Hydrogeologia"></span></a>
 							</li>
 							<li>
-								<a href="#Srodowisko" data-toggle="tab" class="gc-icon srod-icon">Środowisko</a>
+								<a href="#Srodowisko" data-toggle="tab" class="gc-icon srod-icon"><span data-i18n="menu.Srodowisko"></span></a>
 							</li>
 
 						</ul>
@@ -264,196 +304,199 @@
 						<div class="tab-content">
 							<div class="tab-pane active" id="Geologia">
 								<div class="span5">
-									<h2>Informacja geologiczna</h2>
+									<h2><span data-i18n="content.Infogeo"></span></h2>
 
 									<ul class="green-checks">
 										<li>
-											<a href="http://dokumenty.gov.pl/">Informacje o archiwalnych opracowaniach geologicznych</a>
+											<a href="http://dokumenty.gov.pl/"><span data-i18n="content.Info-arch"></span></a>
 										</li>
 										<li>
-											<a href="http://otwory.gov.pl/">Otwory wiertnicze dla rozpoznania budowy geologicznej</a>
+											<a href="http://otwory.gov.pl/"><span data-i18n="content.Info-otw"></span></a>
 										</li>
 										<li>
-											Kartografia geologiczna
+											<span data-i18n="content.Info-karto"></span>
 										</li>
 										<li>
-											<a href="http://surowce.pgi.gov.pl/">Zasoby złóż kopalin</a>
+											<a href="http://surowce.pgi.gov.pl/"><span data-i18n="content.Info-zasoby"></span></a>
 										</li>
 										<li>
-											<a href="http://powiaty.pgi.gov.pl/">Aspekty prawne w geologii</a>
+											<a href="http://powiaty.pgi.gov.pl/"><span data-i18n="content.Info-prawne"></span></a>
 										</li>
 									</ul>
 
-									<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">Dane geologiczne</a>
+									<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large"><span data-i18n="content.Danegeo"></span></a>
 
 									<p class="small-text">
-										Bezpłatny dostęp do metadanych.
+										<span data-i18n="content.Darmo-data"></span>
 									</p>
 								</div>
 								<div class="span5  pull-right">
-									<img src="images/geologia.jpg" class="img-tilt">
+									<img src="images/geologia.jpg" class="img-tilt" alt="Geologia">
 									<p class="small-text pull-right">
-										Geologia.
+										<span data-i18n="menu.Geologia"></span>
 									</p>
 								</div>
 							</div>
 
 							<div class="tab-pane" id="Hydrogeologia">
 								<div class="span5">
-									<img src="images/hydro.jpg" class="img-tilt">
+									<img src="images/hydro.jpg" class="img-tilt" alt="Hydrogeologia">
 									<p class="small-text pull-right">
-										Hydrogeologia
+										<span data-i18n="menu.Hydrogeologia"></span>
 									</p>
 								</div>
 								<div class="span5 pull-right">
-									<h2>Dane hydrogeologiczne</h2>
+									<h2><span data-i18n="content.Hydrodane"></span></h2>
 
 									<ul class="green-checks">
 										<li>
-											Bank HYDRO
+											<span data-i18n="content.Hydro-bank"></span>
 										</li>
 										<li>
-											Baza danych Monitoring Wód Podziemnych
+											<span data-i18n="content.Hydro-mwp"></span>
 										</li>
 										<li>
-											Główne Zbiorniki Wód Podziemnych (GZWP)
+											<span data-i18n="content.Hydro-gzwp"></span>
 										</li>
 										<li>
-											Mapa hydrogeologiczna Polski (MhP)
+											<span data-i18n="content.Hydro-mhp"></span>
 										</li>
 										<li>
-											Mapa hydrogeologiczna Polski - Pierwszy Poziom Wodonośny (MhP PPW)
+											<span data-i18n="content.Hydro-ppw"></span>
 										</li>
 										<li>
-											Obszary zagrożone podtopieniami
+											<span data-i18n="content.Hydro-ozp"></span>
 										</li>
 										<li>
-											Pobory
+											<span data-i18n="content.Hydro-pobory"></span>
 										</li>
 										<li>
-											Zasoby dyspozycyjne
+											<span data-i18n="content.Hydro-zasoby"></span>
 										</li>
 									</ul>
 
-									<a href="http://www.psh.gov.pl/" class="btn btn-warning btn-large">Dane hydrogeologiczne</a>
+									<a href="http://www.psh.gov.pl/" class="btn btn-warning btn-large"><span data-i18n="content.Hydrodane"></span></a>
 									<p class="small-text">
-										Bezpłatny dostęp
+										<span data-i18n="content.Darmo-data"></span>
 									</p>
 								</div>
 							</div>
 
 							<div class="tab-pane" id="Srodowisko">
 								<div class="span5">
-									<h2>Ochrona środowiska</h2>
+									<h2><span data-i18n="content.Srodowisko"></span></h2>
 
 									<ul class="green-checks">
 										<li>
-											<a href="http://geoportal.pgi.gov.pl/srodowiskowa/mapy">Kartografia środowiskowa</a>
+											<a href="http://geoportal.pgi.gov.pl/srodowiskowa/mapy"><span data-i18n="content.Srod-karto"></span></a>
 										</li>
 										<li>
-											Kartografia geochemiczna
+											<span data-i18n="content.Srod-karto-geoch"></span>
 										</li>
 										<li>
-											<a href="http://osuwiska.pgi.gov.pl/">Zagrożenia naturalne</a>
+											<a href="http://osuwiska.pgi.gov.pl/"><span data-i18n="content.Srod-zagr-nat"></span></a>
 										</li>
 										<li>
-											<a href="http://geoportal.pgi.gov.pl/odpady">Zagrożenia antropogeniczne</a>
+											<a href="http://geoportal.pgi.gov.pl/odpady"><span data-i18n="content.Srod-zagr-antr"></span></a>
 										</li>
 									</ul>
 
-									<a href="http://srodowiskowa.pgi.gov.pl/" class="btn btn-warning btn-large">Dane środowiskowe</a>
+									<a href="http://srodowiskowa.pgi.gov.pl/" class="btn btn-warning btn-large"><span data-i18n="content.Sroddane"></span></a>
 
 									<p class="small-text">
-										Bezpłatny dostęp
+										<span data-i18n="content.Darmo-data"></span>
 									</p>
 								</div>
 								<div class="span5  pull-right">
-									<img src="images/srodowiskowa.jpg" class="img-tilt">
+									<img src="images/srodowiskowa.jpg" class="img-tilt" alt="Geologia Środowiskowa">
 									<p class="small-text pull-right">
-										Dane środowiskowe
+										<span data-i18n="content.Sroddane"></span>
 									</p>
 								</div>
 							</div>
 
 							<div class="tab-pane" id="Inzynierska">
 								<div class="span5">
-									<h2>Geologia inżynierska</h2>
+									<h2><span data-i18n="content.Geoinz"></span></h2>
 
 									<ul class="green-checks">
 										<li>
-											Badania podłoża gruntowego
+											<span data-i18n="content.Geoinz-podl"></span>
 										</li>
 										<li>
-											Badania laboratoryjne próbek gruntów i skał
+											<span data-i18n="content.Geoinz-lab"></span>
 										</li>
 										<li>
-											Kartografia i waloryzacja geologiczno-inżynierska
+											<span data-i18n="content.Geoinz-kart"></span>
 										</li>
 										<li>
-											Geoanalizy i modelowanie
+											<span data-i18n="content.Geoinz-mod"></span>
 										</li>
 									</ul>
 
-									<a href="http://geoportal.pgi.gov.pl/atlasy_gi" class="btn btn-warning btn-large">Geologia inżynierska</a>
+									<a href="http://geoportal.pgi.gov.pl/atlasy_gi" class="btn btn-warning btn-large"><span data-i18n="content.Geoinz"></span></a>
 
 									<p class="small-text">
-										Bezpłatny dostęp
+										<span data-i18n="content.Darmo-data"></span>
 									</p>
 								</div>
 								<div class="span5  pull-right">
-									<img src="images/inzynierska.jpg" class="img-tilt">
+									<img src="images/inzynierska.jpg" class="img-tilt" alt="Geologia Inżynierska">
 									<p class="small-text pull-right">
-										Dane geologii inżynierskiej
+										<span data-i18n="content.Geoinz-dane"></span>
 									</p>
 								</div>
 							</div>
 
 							<div class="tab-pane" id="Geofizyka">
 								<div class="span5">
-									<img src="images/gov.jpg" class="img-tilt">
+									<img src="images/gov.jpg" class="img-tilt" alt="Geofizyka">
 									<p class="small-text pull-right">
-										Geofizyka
+										<span data-i18n="content.Geofiz"></span>
+
 									</p>
 								</div>
 								<div class="span5 pull-right">
-									<h2>Dane pomiarowe </br>z badań geofizycznych</h2>
+									<h2><span data-i18n="[html]content.Geofiz-dane-pom"></span></h2>
 
 									<ul class="green-checks">
 										<li>
-											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/wiertnicza">Geofizyka wiertnicza</a>
+											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/wiertnicza"><span data-i18n="content.Geofiz-wiert"></span></a>
 										</li>
 										<li>
-											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/powierzchniowe">Powierzchniowe pomiary geofizyczne</a>
+											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/powierzchniowe"><span data-i18n="content.Geofiz-pow"></span></a>
 										</li>
-										<ul class="green-checks-small">
-											<li>
-												grawimetria,
-											</li>
-											<li>
-												magnetyka,
-											</li>
-											<li>
-												geoelektryka,
-											</li>
-											<li>
-												magnetotelluryka.
-											</li>
-										</ul>
-										<li>
-											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/sejsmika">Sejsmika</a>
-										</li>
-										<li>
-											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/sejsmoakustyka">Morskie profilowania geofizyczne</a>
+										<li style="background-image:none;">
+											<ul class="green-checks-small">
+												<li>
+													<span data-i18n="content.Geofiz-grawi"></span>
+												</li>
+												<li>
+													<span data-i18n="content.Geofiz-magn"></span>
+												</li>
+												<li>
+													<span data-i18n="content.Geofiz-geoelektr"></span>
+												</li>
+												<li>
+													<span data-i18n="content.Geofiz-magntel"></span>
+												</li>
+											</ul>
 										</li>
 										<li>
-											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/probki">Pomiary petrofizyczne</a>
+											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/sejsmika"><span data-i18n="content.Geofiz-sejs"></span></a>
+										</li>
+										<li>
+											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/sejsmoakustyka"><span data-i18n="content.Geofiz-mors"></span></a>
+										</li>
+										<li>
+											<a href="http://geoportal.pgi.gov.pl/portal/page/portal/geofizyka/probki"><span data-i18n="content.Geofiz-petr"></span></a>
 										</li>
 									</ul>
 
-									<a href="http://geofizyka.pgi.gov.pl/" class="btn btn-warning btn-large">Dane geofizyczne</a>
+									<a href="http://geofizyka.pgi.gov.pl/" class="btn btn-warning btn-large"><span data-i18n="content.Geofiz-dane"></span></a>
 
 									<p class="small-text">
-										Bezpłatny dostęp
+										<span data-i18n="content.Darmo-data"></span>
 									</p>
 								</div>
 							</div>
@@ -465,185 +508,198 @@
 				<div class="row get-started-now">
 					<div class="span12 white-panel button-text-panel">
 						<div class="white-panel-content">
-							<h2>Chcesz być na bieżąco z danymi geologicznymi?</h2>
-							<a href="http://bazadata.pgi.gov.pl/app/mailinglist/cbdg-info" class="btn btn-large">Subskrybuj Newsletter</a>
+							<h2><span data-i18n="content.Uptodate"></span></h2>
+							<a href="http://bazadata.pgi.gov.pl/app/mailinglist/cbdg-info" class="btn btn-large btn-warning"><span data-i18n="content.Newsletter"></span></a>
 						</div>
 					</div>
 				</div>
 
 			</div>
 
+			<!--
 			<div class="push">
-				<!--//-->
+
 			</div>
+			-->
+
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer"><span data-i18n="title.h1"></span></span></a></h1>
+							<h2><span data-i18n="menu.Motto"></span></h2>
+						</div>
+					</div>
+					<div class="row links-horizontal">
+						<div class="span12">
+							<ul>
+								<li>
+									<strong><span data-i18n="subsys.CBDG-Pods"></span></strong>
+								</li>
+								<li>
+									<a href="http://dokumenty.pgi.gov.pl/"><span data-i18n="subsys.Dokumenty"></span></a>
+								</li>
+								<li>
+									<a href="http://otworywiertnicze.pgi.gov.pl/ "><span data-i18n="subsys.Otwory"></span></a>
+								</li>
+								<li>
+									<a href="http://otwory.pgi.gov.pl"><span data-i18n="subsys.Rdzenie"></span></a>
+								</li>
+								<li>
+									<a href="http://geofizyka.pgi.gov.pl"><span data-i18n="subsys.Geofiz"></span></a>
+								</li>
+								<li>
+									<a href="http://otwory.pgi.gov.pl/"><span data-i18n="subsys.Analizy"></span></a>
+								</li>
+								<li>
+									<a href="http://kolekcje.pgi.gov.pl/"><span data-i18n="subsys.Kolekcje"></span></a>
+								</li>
+								<li>
+									<a href="http://jaskinie.pgi.gov.pl"><span data-i18n="subsys.Jaskinie"></span></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="span12">
+							<ul>
+								<li>
+									<strong><span data-i18n="menu.CBDG"></span>:</strong>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html"><strong><span data-i18n="menu.O_bazie"></span></strong></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#architektura"><span data-i18n="menu.Architektura"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#podsystemy"><span data-i18n="menu.Podsystemy"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#slowniki"><span data-i18n="menu.Slowniki"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#historia"><span data-i18n="menu.Historia"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#wspolpraca_ue"><span data-i18n="menu.Wspolpraca"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#finansowanie"><span data-i18n="menu.Finansowanie"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#przyszlosc"><span data-i18n="menu.Przyszlosc"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#postery"><span data-i18n="menu.Postery"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html"><strong><span data-i18n="menu.O_danych"></span></strong></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#wprowadzanie_danych"><span data-i18n="menu.Wprowadzanie"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#zasoby_danych"><span data-i18n="menu.Zasoby"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#bazy_zrodlowe"><span data-i18n="menu.Bazy_zrodlowe"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#zasady_dostepu"><span data-i18n="menu.Zasady_dostepu"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#kontakt"><strong><span data-i18n="menu.Kontakt"></span></strong></a>
+								</li>
+								<li style="display:none;">
+									<a href="#">Help</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="span12">
+						<p>
+							<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet/korzystanie_z_serwisu"><span data-i18n="[html]title.PGI"></span> - <span data-i18n="[html]title.NRI"></span></a>
+						</p>
+					</div>
+
+				</div>
+			</footer>
+
 		</div>
 		<!-- page-content-wrapper -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Centralna Baza Danych Geologicznych</span></a></h1>
-						<h3>Naszą misją jest czynić geologię coraz bardziej dostępną.</h3>
-					</div>
-				</div>
-				<div class="row links-horizontal">
-					<div class="span12">
-						<ul>
-							<li>
-								<strong>Podsystemy CBDG:</strong>
-							</li>
-							<li>
-								<a href="http://dokumenty.pgi.gov.pl/">Dokumenty</a>
-							</li>
-							<li>
-								<a href="http://otwory.pgi.gov.pl">Otwory</a>
-							</li>
-							<li>
-								<a href="http://otwory.pgi.gov.pl">Rdzenie wiertnicze</a>
-							</li>
-							<li>
-								<a href="http://geofizyka.pgi.gov.pl">Geofizyka</a>
-							</li>
-							<li>
-								<a href="http://otwory.pgi.gov.pl/">Analizy</a>
-							</li>
-							<li>
-								<a href="http://kolekcje.pgi.gov.pl/" target="_blank">Kolekcje geologiczne</a>
-							</li>
-							<li>
-								<a href="http://jaskinie.pgi.gov.pl" target="_blank">Jaskinie</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="span12">
-						<ul>
-							<li>
-								<strong>o CBDG:</strong>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html"><strong>O Bazie</strong></a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#historia">Historia</a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#postery">Postery</a>
-							</li>
-							<li>
-								<a href="cbdg_architektura_bazy.html"><strong>Architektura bazy</strong></a>
-							</li>
-							<li>
-								<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
-							</li>
-							<li>
-								<a href="cbdg_architektura_bazy.html#slowniki">Słowniki bazy</a>
-							</li>
-							<li>
-								<a href="cbdg_zasoby_danych.html"><strong>Zasoby danych</strong></a>
-							</li>
-							<li>
-								<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
-							</li>
-							<li>
-								<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
-							</li>
-
-							<li>
-								<a href="cbdg_kontakt.html"><strong>Kontakt</strong></a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-
-				<p>
-					<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet/korzystanie_z_serwisu">Państwowy Instytut Geologiczny - Państwowy Instytut Badawczy</a>
-				</p>
-
-			</div>
-		</footer>
 
 		<nav id="menu">
 			<ul>
 				<li>
-					<a href="index.html">Home</a>
+					<a href="index.html"><span data-i18n="menu.CBDG"></span></a>
 				</li>
 				<li>
-					<a href="cbdg_o_bazie.html">O Bazie</a>
+					<a href="cbdg_o_bazie.html"><span data-i18n="menu.O_bazie"></span></a>
 					<ul>
 						<li>
-							<a href="cbdg_o_bazie.html#historia">Historia</a>
+							<a href="cbdg_o_bazie.html#architektura"><span data-i18n="menu.Architektura"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+							<a href="cbdg_o_bazie.html#podsystemy"><span data-i18n="menu.Podsystemy"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+							<a href="cbdg_o_bazie.html#slowniki"><span data-i18n="menu.Slowniki"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#postery">Postery</a>
+							<a href="cbdg_o_bazie.html#historia"><span data-i18n="menu.Historia"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#wspolpraca_ue"><span data-i18n="menu.Wspolpraca"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#finansowanie"><span data-i18n="menu.Finansowanie"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#przyszlosc"><span data-i18n="menu.Przyszlosc"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#postery"><span data-i18n="menu.Postery"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#kontakt"><span data-i18n="menu.Kontakt"></span></a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="cbdg_architektura_bazy.html">Architektura bazy</a>
+					<a href="cbdg_o_danych.html"><span data-i18n="menu.O_danych"></span></a>
 					<ul>
 						<li>
-							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+							<a href="cbdg_o_danych.html#wprowadzanie_danych"><span data-i18n="menu.Wprowadzanie"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+							<a href="cbdg_o_danych.html#zasoby_danych"><span data-i18n="menu.Zasoby"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_danych.html#bazy_zrodlowe"><span data-i18n="menu.Bazy_zrodlowe"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_danych.html#zasady_dostepu"><span data-i18n="menu.Zasady_dostepu"></span></a>
 						</li>
 					</ul>
-				</li>
-				<li>
-					<a href="cbdg_zasoby_danych.html">Zasoby danych</a>
-					<ul>
-						<li>
-							<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
-						</li>
-						<li>
-							<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="cbdg_kontakt.html">Kontakt</a>
 				</li>
 			</ul>
 		</nav>
 
-		<!--<script src="js/jquery.js"></script>-->
-		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
+		<script src="js/jquery.js"></script>
+		<script src="js/i18next-1.8.0.min.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="js/abc.js"></script>-->
 		<script src="js/selectivizr.js"></script>
-		<script>
-			window.jQuery || document.write('<script src="https://gathercontent.com/assets/js/global/jquery-1.7.1.min.js"><\/script>')
-		</script>
-
-		<script type="text/javascript" src="images/_dynamic_002.php"></script>
-		<!--<script type="text/javascript" src="images/_dynamic.php"></script>-->
+		<script src="js/modernizr-2.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<!--<script type="text/javascript" src="js/cookies.js"></script>-->
-
 		<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 		<script type="text/javascript" src="js/slider.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/slider.css">
-
-		<link href="css/jquery.mmenu.all.css" rel="stylesheet" media="screen">
-		<link href="css/jquery.mmenu.positioning.css" rel="stylesheet" media="screen">
-		<link href="css/jquery.mmenu.css" rel="stylesheet" media="screen">
 		<script src="js/jquery.mmenu.min.all.js"></script>
-
-		<link href="css/dropit.css" rel="stylesheet" media="screen">
 		<script src="js/dropit.js"></script>
-
+		<!--<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>-->
 		<script src="js/functions.js"></script>
 
 	</body>

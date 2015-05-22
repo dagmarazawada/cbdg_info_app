@@ -3,107 +3,122 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class=" js no-flexbox canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+<html lang="pl">
 	<!--<![endif]-->
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Centralna Baza Danych Geologicznych</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CBDG</title>
 		<meta name="description" content="Centralna Baza Danych Geologicznych (CBDG) jest największym w Polsce zbiorem cyfrowych danych geologicznych.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="js/abc.js"></script>
 		<link href="css/cbdg1.css" rel="stylesheet" media="screen">
 		<link href="css/cbdg2.css" rel="stylesheet" media="screen">
+		<link href="css/hover.css" rel="stylesheet" media="all">
 		<link href="css/cbdg_responsive.css" rel="stylesheet" media="screen">
-
-		<script src="js/modernizr-2.js"></script>
 		<link rel="shortcut icon" href="http://geoportal.pgi.gov.pl/favicon.ico">
-		<img class="jwvxqtqdiqdbrdnpongg" src="images/seg.gif" border="0" height="1" width="1"><img src="images/a.gif" border="0" height="1" width="1">
+		<link href="css/jquery.mmenu.all.css" rel="stylesheet" media="screen">
+		<link href="css/jquery.mmenu.positioning.css" rel="stylesheet" media="screen">
+		<link href="css/jquery.mmenu.css" rel="stylesheet" media="screen">
+		<link href="css/dropit.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
+		<img class="jwvxqtqdiqdbrdnpongg" src="images/seg.gif" border="0" height="1" width="1" alt="separator"><img src="images/a.gif" border="0" height="1" width="1" alt="separator">
 		<!--[if lt IE 7]><p class=chromeframe>Masz <em>przestarzałą przeglądarkę!</em> <a href="http://browsehappy.com/">Zmień ją na coś nowszego</a> żeby przeglądąć tę stronę.</p><![endif]-->
 		<div class="page-content-wrapper">
 
 			<header class="header fixed">
-				<div class="row">
-					
+				<div class="row" id="header_row">
+
 					<div id="menuicoDiv">
-						<a class="menuico" href="#menu" style="right: 0;"></a>
+						<a class="menuico hvr-fade" href="#menu" style="right: 0;">&nbsp;</a>
 					</div>
 
 					<div class="span3">
-						<h1 class="logo"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><span class="title_h1">Państwowy&nbsp;Instytut&nbsp;Geologiczny Państwowy&nbsp;Instytut&nbsp;Badawczy</span></h1>
+						<h1 class="logo"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"><span class="title_h1"><span data-i18n="[html]title.PGI-NRI"></span></span></a></h1>
 					</div>
-					
+
 					<div class="span2 lang">
-						<a href="cbdg_o_bazie_en.html"><img src="css/img/lang_uk.png"></a>
+						<div style="cursor: pointer;" data-i18n="[html]menu.flag_img;"></div>
 					</div>
-					
+
 					<div class="span7 menu_desktop">
 						<ul class="menu">
-							<li><a class="btn btn-warning btn-large" href="index.html">Home</a></li>
 							<li>
-								<a class="btn btn-warning btn-large" href="cbdg_o_bazie.html">O Bazie</a>
+								<a class="menu_desktop_btn hvr-fade" href="index.html"><span data-i18n="menu.CBDG"></span></a>
+							</li>
+							<li>
+								<a class="menu_desktop_btn hvr-fade" href="cbdg_o_bazie.html"><span data-i18n="menu.O_bazie"></span></a>
 								<ul>
 									<li>
-										<a href="cbdg_o_bazie.html#historia">Historia</a>
+										<a href="cbdg_o_bazie.html#architektura"><span data-i18n="menu.Architektura"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+										<a href="cbdg_o_bazie.html#podsystemy"><span data-i18n="menu.Podsystemy"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+										<a href="cbdg_o_bazie.html#slowniki"><span data-i18n="menu.Slowniki"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_o_bazie.html#postery">Postery</a>
+										<a href="cbdg_o_bazie.html#historia"><span data-i18n="menu.Historia"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#wspolpraca_ue"><span data-i18n="menu.Wspolpraca"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#finansowanie"><span data-i18n="menu.Finansowanie"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#przyszlosc"><span data-i18n="menu.Przyszlosc"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#postery"><span data-i18n="menu.Postery"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_bazie.html#kontakt"><span data-i18n="menu.Kontakt"></span></a>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<a class="btn btn-warning btn-large" href="cbdg_architektura_bazy.html">Architektura bazy</a>
+								<a class="menu_desktop_btn hvr-fade" href="cbdg_o_danych.html"><span data-i18n="menu.O_danych"></span></a>
 								<ul>
 									<li>
-										<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+										<a href="cbdg_o_danych.html#wprowadzanie_danych"><span data-i18n="menu.Wprowadzanie"></span></a>
 									</li>
 									<li>
-										<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+										<a href="cbdg_o_danych.html#zasoby_danych"><span data-i18n="menu.Zasoby"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_danych.html#bazy_zrodlowe"><span data-i18n="menu.Bazy_zrodlowe"></span></a>
+									</li>
+									<li>
+										<a href="cbdg_o_danych.html#zasady_dostepu"><span data-i18n="menu.Zasady_dostepu"></span></a>
 									</li>
 								</ul>
 							</li>
-							<li>
-								<a class="btn btn-warning btn-large" href="cbdg_zasoby_danych.html">Zasoby danych</a>
-								<ul>
-									<li>
-										<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
-									</li>
-									<li>
-										<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
-									</li>
-								</ul>
-							</li>
-							<li><a class="btn btn-warning btn-large" href="cbdg_kontakt.html">Kontakt</a></li>
 						</ul>
 
 					</div>
-
 
 				</div>
 			</header>
 
 			<div class="cbdg-unit" style="height: auto;">
 				<div class="container">
-					<h1><a href="index.html">Centralna Baza Danych Geologicznych</a></h1>
-					<h2>coraz bardziej dostępna geologia</h2>
-					
+					<div id="mainTitle" style="margin: 0; color:white;">
+						<h1><a href="index.html"><span data-i18n="title.h1"></span></a></h1>
+						<h2><span data-i18n="title.h2"></span></h2>
+					</div>
+
 				</div>
 			</div>
 
 			<div class="container">
-				
+
 				<div class="row get-started-now">
 					<div class="span10 offset1 white-panel button-text-panel">
-						<h2>O Bazie</h2>
+						<h2><span data-i18n="oBazie.O_bazie"></span></h2>
 					</div>
 				</div>
 
@@ -113,38 +128,18 @@
 							<div class="row cf">
 								<div class="span12">
 									<div class="padding-large">
-										
-										<h2>O Centralnej Bazie Danych Geologicznych</h2>
-										
-										<p> Centralna Baza Danych Geologicznych, prowadzona i rozbudowywana przez Państwowy Instytut Geologiczny-PIB, to największy w Polsce zbiór danych cyfrowych związanych z naukami o Ziemi. Zadaniem CBDG jest gromadzenie i udostępnianie różnego rodzaju informacji z dziedziny geologii i nauk pokrewnych. Głównym celem działania jest wsparcie działalności administracji geologicznej, Departamentu Geologii i Koncesji Geologicznych Ministerstwa Środowiska, państwowej służby geologicznej (Państwowego Instytutu Geologicznego), uczelni i innych ośrodków naukowych, przedsiębiorstw i firm geologicznych.</p>
 
-										<p> Prowadzeniem CBDG zajmuje się Zakład Utrzymania Systemów Informatycznych. Zakład ten wykonuje wszystkie prace bieżące zwiazane z prowadzeniem bazy, a także prace rozwojowe nad systemem CBDG.</p>
-										<a href="http://geoportal.pgi.gov.pl"> <img class="portal img-wrap-right" src="images/portal_CBDG_2015.jpg" alt="Portal CBDG" title="Portal CBDG"></a>
-										<h3> Pracownicy zajmujący się prowadzeniem CBDG</h3>
-										<ul>
-											<li>mgr Marek Adamski</li>
-											<li>mgr Iwona Duliban</li>
-											<li>mgr Sylwia Gąsińska</li>
-											<li>inż. Marcin Gołębiewski</li>
-											<li>dr inż. Piotr Gut</li>
-											<li>mgr Renata Karoń-Słomczyńska</li>
-											<li>mgr Jarosław Kmita</li>
-											<li>mgr Magdalena Langner</li>
-											<li>mgr Tomasz Liszewski</li>
-											<li>mgr Ewa Machalska</li>
-											<li>mgr Radosław Markiewicz</li>
-											<li>mgr Wojciech Paciura</li>
-											<li>mgr Izabella Sadowa</li>
-											<li>mgr inż. Dorota Siewruk-Wróblewska</li>
-											<li>mgr Dominik Stańczuk</li>
-											<li>mgr Milena Staros</li>
-										</ul>
-										
+										<h2><span data-i18n="oBazie.O_CBDG"></span></h2>
+
+										<p>
+											<span data-i18n="oBazie.O_CBDG-text"></span>
+										</p>
+
 										<p></p>
-										
+
 										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
 										<p class="small-text">
-											Bezpłatny dostęp do danych
+											<span data-i18n="content.Darmo-data"></span>
 										</p>
 									</div>
 								</div>
@@ -152,113 +147,284 @@
 						</div>
 					</div>
 				</div>
-				
+
+				<div id="architektura" class="row">
+					<div class="span12 white-panel better-manage">
+						<div class="container">
+							<div class="row cf">
+								<div class="span12">
+									<div class="padding-large">
+
+										<h2><span data-i18n="oBazie.Arch"></span></h2>
+
+										<p>
+											<span data-i18n="oBazie.Arch-p1"></span>
+										</p>
+										<a href="http://geoportal.pgi.gov.pl"> <span data-i18n="[html]oBazie.Arch-img"></span></a>
+										<p></p>
+
+										<p>
+											<span data-i18n="oBazie.Arch-p2"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Arch-p3"></span>
+										</p>
+
+										<p></p>
+
+										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
+										<p class="small-text">
+											<span data-i18n="content.Darmo-data"></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="podsystemy" class="row">
+					<div class="span12 white-panel better-manage">
+						<div class="container">
+							<div class="row cf">
+								<div class="span12">
+									<div class="padding-large">
+
+										<h2><span data-i18n="oBazie.Podsys"></span></h2>
+
+										<p>
+											<span data-i18n="oBazie.Podsys-p1"></span>
+										</p>
+										<span data-i18n="[html]oBazie.Podsys-list"></span>
+
+										<p></p>
+
+										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
+										<p class="small-text">
+											<span data-i18n="content.Darmo-data"></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="slowniki" class="row">
+					<div class="span12 white-panel better-manage">
+						<div class="container">
+							<div class="row cf">
+								<div class="span12">
+									<div class="padding-large">
+										<h2><span data-i18n="oBazie.Slown"></span></h2>
+										<h3><span data-i18n="oBazie.Slown-h1"></span></h3>
+
+										<p>
+											<span data-i18n="oBazie.Slown-p1"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Slown-p2"></span>
+										</p>
+
+										<h3><span data-i18n="oBazie.Slown-h2"></span></h3>
+
+										<p>
+											<span data-i18n="oBazie.Slown-p3"></span>
+										</p>
+										<span data-i18n="[html]oBazie.Slown-list"></span>
+										<p></p>
+
+										<h3><span data-i18n="oBazie.Slown-h3"></span></h3>
+
+										<p>
+											<span data-i18n="oBazie.Slown-p4"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Slown-p5"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Slown-p6"></span>
+										</p>
+
+										<a href="http://slp.pgi.gov.pl/"> <img class="portal" src="http://geoportal.pgi.gov.pl/css/cbdg/images/slp.gif" alt="Słownik jednostek litostratygraficznych Polski" title="Słownik jednostek litostratygraficznych Polski"></a>
+
+										<p></p>
+
+										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
+										<p class="small-text">
+											<span data-i18n="content.Darmo-data"></span>
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div id="historia" class="row">
 					<div class="span12 white-panel better-manage">
 						<div class="container">
 							<div class="row cf">
 								<div class="span12">
 									<div class="padding-large">
-										<h2>Historia</h2>
-										
-										<p> Z inicjatywą opracowania Centralnej Bazy Danych Geologicznych wystąpiło w roku 1993 Ministerstwo Ochrony Środowiska, Zasobów Naturalnych i Leśnictwa (obecnie Ministerstwo Środowiska).</p>
+										<h2><span data-i18n="oBazie.Hist"></span></h2>
 
-										<p> Prace wstępne nad projektem bazy rozpoczęto w 1994 roku w Ośrodku Komputeryzacji Badań PIG. Dokumentacja bazy danych brytyjskiej służby geologicznej (British Geological Survey) posłużyła jako materiał szkoleniowy, ilustrujący metodykę prac i możliwe rozwiązania. Dostęp do modelu danych bazy GEODE, opracowanej w służbie geologicznej RPA (Council for Geoscience), umożliwił przejście do następnego etapu działań - przygotowania własnej struktury bazy, dostosowanej do krajowych standardów i potrzeb.</p>
+										<p>
+											<span data-i18n="oBazie.Hist-p1"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Hist-p2"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Hist-p3"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Hist-p4"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Hist-p5"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Hist-p6"></span>
+										</p>
 										
-										<p> Zdecydowano o użyciu systemu zarządzania bazami danych Oracle jako podstawowego dla bazy, a także o zastosowaniu metodyki Oracle CASE do jej projektowania. Do prac analitycznych i projektowych włączono konsultantów z firmy Oracle Polska. Przeprowadzone wśród przyszłych użytkowników bazy w ramach tzw. analizy strategicznej badania ankietowe wykazały, że oczekiwania wobec planowanej CBDG są ogromne: baza miała zawierać wszelkie możliwe dane geologiczne – włącznie z tymi, które nie zostały nigdy dotąd przetworzone na postać cyfrową, a ponadto – być wyposażona we wszelkie możliwe, nawet bardzo zaawansowane funkcje. Było jasne, że należy przede wszystkim udostępnić użytkownikom aplikacje do wprowadzania, wyszukiwania i przeglądania danych. Pewnych danych szczegółowych o oczekiwanym przez użytkowników zakresie informacji w bazie dostarczyły specjalne badania ankietowe, prowadzone zarówno w PIG, jak i poza Instytutem. Bliższej analizie poddano też wszystkie tematyczne bazy danych prowadzone w PIG oraz niektóre bazy instytucji zewnętrznych.</p>
-										
-										<p> W 1996 roku powołano w Centralnym Archiwum Geologicznym Sekcję CBDG (obecnie Pracownia CBDG), odpowiedzialną za dalsze prace nad bazą. Prowadzone w latach 1996–1997 intensywne prace analityczne, projektowe i programistyczne zaowocowały wdrożeniem w roku 1997 produkcyjnej wersji CBDG, złożonej z głównych podsystemów: Otwory, Dokumenty, Analizy, Złoża, a także podsystemu przestrzennego (GIS) bazy, jak również specjalnych aplikacji CBDG (przeglądarek: tabelarycznej, profilowej i geograficznej). Baza była już wówczas wyposażona w najważniejsze słowniki geologiczne, wykorzystywane do wprowadzania i wyszukiwania danych.</p>
-										
-										<p> W kolejnych latach opracowywano nowe, stale rozszerzane i udoskonalane wersje dotychczas wdrożonych podsystemów CBDG, a także rozszerzano ją o nowe podsystemy: Kolekcje geologiczne, do którego przeniesiono dostępne cyfrowe dane katalogowe muzeum PIG; Geofizyka wiertnicza (gdzie przetransferowano dane z bazy tematycznej GEOFLOG); Punkty badawcze (gdzie można gromadzić dane o lokalizacji punktów dokonywania obserwacji i pomiarów powierzchniowych). Wykonano też dodatkowy podsystem Rdzenie wiertnicze.</p>
-										
-										<p> W pracach nad słownikami CBDG i założeniami funkcjonalnymi poszczególnych podsystemów bazy uczestniczyli także inni pracownicy Państwowego Instytutu Geologicznego, którzy działali w ramach tak zwanych grup problemowych, dostarczających Pracowni CBDG niezbędne specyfikacje geologiczne. W pracach nad niektórymi słownikami CBDG brali udział także geolodzy spoza PIG.</p>
-										
-										<h3> Wykaz osób biorących udział w pracach CBDG w okresie 1996–2008</h3>
-										<ul>
-											<li>Marek Adamski</li>
-											<li>Maciej Bojanowski</li>
-											<li>Jacek Chełmiński</li>
-											<li>Iwona Duliban</li>
-											<li>Marcin Gołębiewski</li>
-											<li>Magdalena Jakóbczak</li>
-											<li>Magdalena Kowalska</li>
-											<li>Krystyna Kupiszak</li>
-											<li>Tomasz Liszewski</li>
-											<li>Ewa Machalska</li>
-											<li>Tomasz Mardal</li>
-											<li>Radosław Markiewicz</li>
-											<li>Stefan Młynarski</li>
-											<li>Wojciech Paciura</li>
-											<li>Jerzy Piotrowski</li>
-											<li>Izabella Sadowa</li>
-											<li>Anna Sienkiewicz</li>
-											<li>Dominik Stańczuk</li>
-											<li>Agnieszka Stańczyk</li>
-											<li>Justyna Sylwestrzak</li>
-										</ul>
+										<h3> <span data-i18n="oBazie.Hist2"></span></h3>
+										<p>
+											<span data-i18n="[html]oBazie.Hist2-p1"></span>
+										</p>
 										
 										<p></p>
-										
+
 										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
 										<p class="small-text">
-											Bezpłatny dostęp do danych
+											<span data-i18n="content.Darmo-data"></span>
 										</p>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
 				</div>
-				
+
+				<div id="wspolpraca_ue" class="row">
+					<div class="span12 white-panel better-manage">
+						<div class="container">
+							<div class="row cf">
+								<div class="span12">
+									<div class="padding-large">
+										<h2><span data-i18n="oBazie.Wspolpr"></span></h2>
+
+										<p>
+											<span data-i18n="[html]oBazie.Wspolpr-p1"></span>
+										</p>
+										<a href="http://geomind.eu/"> <img class="img-wrap-right" src="http://geoportal.pgi.gov.pl/css/cbdg/images/cbdg_geomind.jpg" alt="GEOMIND" title="GEOMIND"></a>
+
+										<p>
+											<span data-i18n="[html]oBazie.Wspolpr-p2"></span>
+										</p>
+										<p>
+											<span data-i18n="[html]oBazie.Wspolpr-p3"></span>
+										</p>
+										<br>
+
+										<a href="http://www.geo-seas.eu/v_cdi_v3/search.asp"> <img class="img-wrap-left" src="http://geoportal.pgi.gov.pl/css/cbdg/images/cbdg_geoseas.png" alt="Geo-Seas" title="Geo-Seas"></a>
+										<p>
+											<span data-i18n="[html]oBazie.Wspolpr-p4"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Wspolpr-p5"></span>
+										</p>
+
+										<p>
+											<span data-i18n="[html]oBazie.Wspolpr-p6"></span>
+										</p>
+
+										<a href="http://eearth.eu/"> <img class="img-wrap-right" src="http://geoportal.pgi.gov.pl/css/cbdg/images/cbdg_eearth_.jpg" alt="eEarth" title="eEarth"></a>
+
+										<p>
+											<span data-i18n="[html]oBazie.Wspolpr-p7"></span>
+										</p>
+										<br>
+
+										<p></p>
+
+										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
+										<p class="small-text">
+											<span data-i18n="content.Darmo-data"></span>
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div id="finansowanie" class="row">
 					<div class="span12 white-panel better-manage">
 						<div class="container">
 							<div class="row cf">
 								<div class="span12">
 									<div class="padding-large">
-										<h2>Finansowanie prac</h2>
-										
-										<p> Prace nad prowadzeniem i rozbudową Centralnej Bazy Danych Geologicznych zlecane są Państwowemu Instytutowi Geologicznemu przez Ministerstwo Środowiska a ich finansowane odbywa się ze środków Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej.</p>
+										<h2><span data-i18n="oBazie.Finans"></span></h2>
+
+										<p>
+											<span data-i18n="oBazie.Finans-p1"></span>
+										</p>
 
 										<a href="http://www.mos.gov.pl"> <img src="http://geoportal.pgi.gov.pl/css/images/logo_mos.png" alt="Ministerstwo Środowiska" title="Ministerstwo Środowiska"></a>
 										<a href="http://www.nfosigw.gov.pl/"> <img src="http://geoportal.pgi.gov.pl/css/images/logo_nfos.gif" alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej" title="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej"></a>
 										<p></p>
-										
+
 										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
 										<p class="small-text">
-											Bezpłatny dostęp do danych
+											<span data-i18n="content.Darmo-data"></span>
 										</p>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				
+
 				<div id="przyszlosc" class="row">
 					<div class="span12 white-panel better-manage">
 						<div class="container">
 							<div class="row cf">
 								<div class="span12">
 									<div class="padding-large">
-										<h2>Przyszłość</h2>
-										
-										<p> Centralna Baza Danych Geologicznych będzie nadal utrzymywana i rozbudowywana. Zadaniem priorytetowym jest zwiększanie zasobów danych, ze stałym wzrostem ich jakości. Kontynuowane także będą prace nad transferem do CBDG danych ze starszych baz tematycznych oraz integracja CBDG z bazami tematycznymi nadal użytkowanymi. Planowane rozszerzenia zakresu informacyjnego bazy da między innymi możliwość przeglądania zeskanowanych: dokumentacji, map, załączników graficznych, itp. Zakres danych z CBDG, udostępnianych publicznie w ramach obowiązujących regulacji prawnych, w internecie, będzie stale rozszerzany. W powiązaniu z CBDG są i będą projektowane oraz opracowywane międzynarodowe systemy informacji geologicznych.</p>
+										<h2><span data-i18n="oBazie.Future"></span></h2>
 
-										<p> Z rozbudową bazy wiązać się będzie wdrażanie nowoczesnych technologii informatycznych, a także opracowywanie wyspecjalizowanego oprogramowania aplikacyjnego służącego do przetwarzania danych, w tym wydajnych sposobów wizualizacji danych.</p>
-										
+										<p>
+											<span data-i18n="oBazie.Future-p1"></span>
+										</p>
+
+										<p>
+											<span data-i18n="oBazie.Future-p2"></span>
+										</p>
+
 										<p></p>
-										
+
 										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
 										<p class="small-text">
-											Bezpłatny dostęp do danych
+											<span data-i18n="content.Darmo-data"></span>
 										</p>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -270,213 +436,256 @@
 							<div class="row cf">
 								<div class="span12">
 									<div class="padding-large">
-										<h2>Postery</h2>
-										
-										<p> Postery wykonane na II Polski Kongres Geologiczny obrazujące informacje o różnych grupach informacji z Centralnej Bazy Danych Geologicznych.</p>
-										
+										<h2><span data-i18n="oBazie.Poster"></span></h2>
+
+										<p>
+											<span data-i18n="oBazie.Poster-p1"></span>
+										</p>
+
 										<a href="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/CBDG_dokumenty.pdf"> <img src="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/dokumenty.jpg" alt="Archiwalne dokumentacje geologiczne CBDG" title="Archiwalne dokumentacje geologiczne CBDG"></a>
 										<a href="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/CBDG_otwory.pdf"> <img src="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/otwory.jpg" alt="Otwory wiertnicze CBDG" title="Otwory wiertnicze CBDG"></a>
-										
+
 										<a href="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/CBDG_geofizyka.pdf"> <img src="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/geofizyka.jpg" alt="Geofizyka CBDG" title="Geofizyka CBDG"></a>
+										<br>
 										<a href="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/CBDG_kolekcje.pdf"> <img src="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/kolekcje.jpg" alt="Kolekcje geologiczne CBDG" title="Kolekcje geologiczne CBDG"></a>
-										
+
 										<a href="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/CBDG_jaskinie.pdf"> <img src="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/jaskinie.jpg" alt="Jaskinie Polski CBDG" title="Jaskinie Polski CBDG"></a>
 										<a href="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/CBDG_analizy.pdf"> <img src="http://geoportal.pgi.gov.pl/css/cbdg/images/postery/analizy.jpg" alt="Analizy CBDG" title="Analizy CBDG"></a>
-										
-
 
 										<p></p>
-										
+
 										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
 										<p class="small-text">
-											Bezpłatny dostęp do danych
+											<span data-i18n="content.Darmo-data"></span>
 										</p>
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
 				</div>
 
-				
+				<div id="kontakt" class="row">
+					<div class="span12 white-panel better-manage">
+						<div class="container">
+							<div class="row cf">
+								<div class="span12">
+									<div class="padding-large">
+
+										<h2><span data-i18n="oBazie.Kontakt"></span></h2>
+
+										<p>
+											<span data-i18n="oBazie.Kontakt-p1"></span>
+										</p>
+										<p>
+											<span data-i18n="[html]oBazie.Kontakt-p2"></span>
+										</p>
+										<p>
+											<a href="mailto:cbdg@pgi.gov.pl?subject=CBDG">cbdg@pgi.gov.pl</a>
+										</p>
+
+										<p></p>
+
+										<a href="http://geoportal.pgi.gov.pl" class="btn btn-warning btn-large">geoportal.pgi.gov.pl</a>
+										<p class="small-text">
+											<span data-i18n="content.Darmo-data"></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<div class="row get-started-now">
 					<div class="span12 white-panel button-text-panel">
 						<div class="white-panel-content">
-							<h2>Chcesz być na bieżąco z danymi geologicznymi?</h2>
-							<a href="http://bazadata.pgi.gov.pl/app/mailinglist/cbdg-info" class="btn btn-large">Subskrybuj Newsletter</a>
+							<h2><span data-i18n="content.Uptodate"></span></h2>
+							<a href="http://bazadata.pgi.gov.pl/app/mailinglist/cbdg-info" class="btn btn-large"><span data-i18n="content.Newsletter"></span></a>
 						</div>
 					</div>
 				</div>
 
 			</div>
+			<!--
+			<div class="push"></div>
+			-->
 
-			<div class="push">
-				<!--//-->
-			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer"><span data-i18n="title.h1"></span></span></a></h1>
+							<h2><span data-i18n="menu.Motto"></span></h2>
+						</div>
+					</div>
+					<div class="row links-horizontal">
+						<div class="span12">
+							<ul>
+								<li>
+									<strong><span data-i18n="subsys.CBDG-Pods"></span></strong>
+								</li>
+								<li>
+									<a href="http://dokumenty.pgi.gov.pl/"><span data-i18n="subsys.Dokumenty"></span></a>
+								</li>
+								<li>
+									<a href="http://otwory.pgi.gov.pl"><span data-i18n="subsys.Otwory"></span></a>
+								</li>
+								<li>
+									<a href="http://otwory.pgi.gov.pl"><span data-i18n="subsys.Rdzenie"></span></a>
+								</li>
+								<li>
+									<a href="http://geofizyka.pgi.gov.pl"><span data-i18n="subsys.Geofiz"></span></a>
+								</li>
+								<li>
+									<a href="http://otwory.pgi.gov.pl/"><span data-i18n="subsys.Analizy"></span></a>
+								</li>
+								<li>
+									<a href="http://kolekcje.pgi.gov.pl/"><span data-i18n="subsys.Kolekcje"></span></a>
+								</li>
+								<li>
+									<a href="http://jaskinie.pgi.gov.pl"><span data-i18n="subsys.Jaskinie"></span></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="span12">
+							<ul>
+								<li>
+									<strong><span data-i18n="menu.CBDG"></span>:</strong>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html"><strong><span data-i18n="menu.O_bazie"></span></strong></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#architektura"><span data-i18n="menu.Architektura"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#podsystemy"><span data-i18n="menu.Podsystemy"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#slowniki"><span data-i18n="menu.Slowniki"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#historia"><span data-i18n="menu.Historia"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#wspolpraca_ue"><span data-i18n="menu.Wspolpraca"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#finansowanie"><span data-i18n="menu.Finansowanie"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#przyszlosc"><span data-i18n="menu.Przyszlosc"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#postery"><span data-i18n="menu.Postery"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html"><strong><span data-i18n="menu.O_danych"></span></strong></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#wprowadzanie_danych"><span data-i18n="menu.Wprowadzanie"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#zasoby_danych"><span data-i18n="menu.Zasoby"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#bazy_zrodlowe"><span data-i18n="menu.Bazy_zrodlowe"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_danych.html#zasady_dostepu"><span data-i18n="menu.Zasady_dostepu"></span></a>
+								</li>
+								<li>
+									<a href="cbdg_o_bazie.html#kontakt"><strong><span data-i18n="menu.Kontakt"></span></strong></a>
+								</li>
+								<li style="display:none;">
+									<a href="#">Help</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="span12">
+						<p>
+							<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet/korzystanie_z_serwisu"><span data-i18n="[html]title.PGI"></span> - <span data-i18n="[html]title.NRI"></span></a>
+						</p>
+					</div>
+
+				</div>
+			</footer>
+
 		</div>
 		<!-- page-content-wrapper -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="span12">
-						<h1 class="logo_footer"><a href="http://www.pgi.gov.pl/"><img src="images/logo_pig-pib03_2.png" alt="Państwowy Instytut Geologiczny"></a><a href="http://baza.pgi.gov.pl"><span class="title_h1_footer">Centralna Baza Danych Geologicznych</span></a></h1>
-						<h3>Naszą misją jest czynić geologię coraz bardziej dostępną.</h3>
-					</div>
-				</div>
-				<div class="row links-horizontal">
-					<div class="span12">
-						<ul>
-							<li>
-								<strong>Podsystemy CBDG:</strong>
-							</li>
-							<li>
-								<a href="http://dokumenty.pgi.gov.pl/">Dokumenty</a>
-							</li>
-							<li>
-								<a href="http://otwory.pgi.gov.pl">Otwory</a>
-							</li>
-							<li>
-								<a href="http://otwory.pgi.gov.pl">Rdzenie wiertnicze</a>
-							</li>
-							<li>
-								<a href="http://geofizyka.pgi.gov.pl">Geofizyka</a>
-							</li>
-							<li>
-								<a href="http://otwory.pgi.gov.pl/">Analizy</a>
-							</li>
-							<li>
-								<a href="http://kolekcje.pgi.gov.pl/" target="_blank">Kolekcje geologiczne</a>
-							</li>
-							<li>
-								<a href="http://jaskinie.pgi.gov.pl" target="_blank">Jaskinie</a>
-							</li>
-						</ul>
-					</div>
 
-					<div class="span12">
-						<ul>
-							<li>
-								<strong>o CBDG:</strong>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html"><strong>O Bazie</strong></a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#historia">Historia</a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
-							</li>
-							<li>
-								<a href="cbdg_o_bazie.html#postery">Postery</a>
-							</li>
-							<li>
-								<a href="cbdg_architektura_bazy.html"><strong>Architektura bazy</strong></a>
-							</li>
-							<li>
-								<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
-							</li>
-							<li>
-								<a href="cbdg_architektura_bazy.html#slowniki">Słowniki bazy</a>
-							</li>
-							<li>
-								<a href="cbdg_zasoby_danych.html"><strong>Zasoby danych</strong></a>
-							</li>
-							<li>
-								<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
-							</li>
-							<li>
-								<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
-							</li>
-														
-							<li>
-								<a href="cbdg_kontakt.html"><strong>Kontakt</strong></a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-
-				<p>
-					<a href="http://geoportal.pgi.gov.pl/portal/page/portal/PIGMainExtranet/korzystanie_z_serwisu">Państwowy Instytut Geologiczny - Państwowy Instytut Badawczy</a>
-				</p>
-
-			</div>
-		</footer>
-		
 		<nav id="menu">
 			<ul>
 				<li>
-					<a href="index.html">Home</a>
+					<a href="index.html"><span data-i18n="menu.CBDG"></span></a>
 				</li>
 				<li>
-					<a href="cbdg_o_bazie.html">O Bazie</a>
+					<a href="cbdg_o_bazie.html"><span data-i18n="menu.O_bazie"></span></a>
 					<ul>
 						<li>
-							<a href="cbdg_o_bazie.html#historia">Historia</a>
+							<a href="cbdg_o_bazie.html#architektura"><span data-i18n="menu.Architektura"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#finansowanie">Finansowanie</a>
+							<a href="cbdg_o_bazie.html#podsystemy"><span data-i18n="menu.Podsystemy"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#przyszlosc">Przyszłość</a>
+							<a href="cbdg_o_bazie.html#slowniki"><span data-i18n="menu.Slowniki"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_o_bazie.html#postery">Postery</a>
+							<a href="cbdg_o_bazie.html#historia"><span data-i18n="menu.Historia"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#wspolpraca_ue"><span data-i18n="menu.Wspolpraca"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#finansowanie"><span data-i18n="menu.Finansowanie"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#przyszlosc"><span data-i18n="menu.Przyszlosc"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#postery"><span data-i18n="menu.Postery"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_bazie.html#kontakt"><span data-i18n="menu.Kontakt"></span></a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="cbdg_architektura_bazy.html">Architektura bazy</a>
+					<a href="cbdg_o_danych.html"><span data-i18n="menu.O_danych"></span></a>
 					<ul>
 						<li>
-							<a href="cbdg_architektura_bazy.html#podsystemy">Podsystemy</a>
+							<a href="cbdg_o_danych.html#wprowadzanie_danych"><span data-i18n="menu.Wprowadzanie"></span></a>
 						</li>
 						<li>
-							<a href="cbdg_architektura_bazy.html#slowniki">Słowniki</a>
+							<a href="cbdg_o_danych.html#zasoby_danych"><span data-i18n="menu.Zasoby"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_danych.html#bazy_zrodlowe"><span data-i18n="menu.Bazy_zrodlowe"></span></a>
+						</li>
+						<li>
+							<a href="cbdg_o_danych.html#zasady_dostepu"><span data-i18n="menu.Zasady_dostepu"></span></a>
 						</li>
 					</ul>
-				</li>
-				<li>
-					<a href="cbdg_zasoby_danych.html">Zasoby danych</a>
-					<ul>
-						<li>
-							<a href="cbdg_zasoby_danych.html#bazy_zrodlowe">Bazy źródłowe</a>
-						</li>
-						<li>
-							<a href="cbdg_zasoby_danych.html#wprowadzanie_danych">Wprowadzanie danych</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="cbdg_kontakt.html">Kontakt</a>
 				</li>
 			</ul>
 		</nav>
 
 		<script src="js/jquery.js"></script>
-		<script src="js/selectivizr.js"></script>
-		<script>
-			window.jQuery || document.write('<script src="https://gathercontent.com/assets/js/global/jquery-1.7.1.min.js"><\/script>')
-		</script>
-
-		<script type="text/javascript" src="images/_dynamic_002.php"></script>
-		<!--<script type="text/javascript" src="images/_dynamic.php"></script>-->
+		<script type="text/javascript" src="js/i18next-1.8.0.min.js"></script>
+		<!--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="js/selectivizr.js"></script>-->
+		<script src="js/modernizr-2.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<!--<script type="text/javascript" src="js/cookies.js"></script>-->
-		
-		<link href="css/jquery.mmenu.all.css" rel="stylesheet" media="screen">
-		<link href="css/jquery.mmenu.positioning.css" rel="stylesheet" media="screen">
-		<link href="css/jquery.mmenu.css" rel="stylesheet" media="screen">
 		<script src="js/jquery.mmenu.min.all.js"></script>
-		
-		<link href="css/dropit.css" rel="stylesheet" media="screen">
 		<script src="js/dropit.js"></script>
-		
+		<!--<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>-->
 		<script src="js/functions.js"></script>
 
 	</body>
