@@ -2,7 +2,7 @@
 
 This is android mobile info-app project developed in html5, css & js and phonegap library. Download and install on your android device:
 
-[CBDG_info_v03.apk](https://bitbucket.org/dzaw/cbdg_info_app/src/47afc16567e093d0efa67d1cccbce61105b9ee45/CBDG_info_v03.apk?at=master)
+[CBDG_info_v03.apk](http://dagmarazawada.pl/pgi/CBDG_info_v03.apk)
 
 ### What is this repository for? ###
 
